@@ -1,0 +1,22 @@
+{
+  "name": "resume",
+  "version": "0.0.0",
+  "description": "Joaquin Oltra resume",
+  "main": "index.js",
+  "scripts": {
+    "watch-jade": "jade -w resume.jade --out static",
+    "build-jade": "jade resume.jade --out static",
+    "watch-stylus": "stylus -w resume.styl --out static",
+    "build-stylus": "stylus resume.styl --out static",
+    "watch": "npm run watch-jade & npm run watch-stylus",
+    "build": "npm run build-jade & npm run build-stylus",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joaquin Oltra",
+  "license": "GPLv3",
+  "devDependencies": {
+    "jade": "^1.4.2",
+    "marked": "^0.3.2",
+    "stylus": "^0.47.1"
+  }
+}

@@ -34,6 +34,23 @@ intro: |
   * [Coffee node cli for organizing photos](https://github.com/joakin/galeria-cli)
 
 work:
+  - employer: Freelance (Various)
+    date: December 2013 - Now
+    position: Freelance web developer, Javascript programmer, HTML & CSS programmer
+    activities: |
+      Freelance contracting for different clients.
+
+      * Data visualizations dashboard with d3
+      * JS web applications
+        * React.js for the view layer
+        * Browser applications using npm & browserify
+        * Immutable data structures (via mori.js)
+        * JS web application architecture & structure
+        * node.js backend APIs
+          * Promises A+ for async (via bluebird.js)
+      * New views on existing angular.js applications
+
+
   - employer: OHIM
     date: September 2010 - June 2013
     position: Freelance web developer, Javascript programmer, Senior analyst programmer

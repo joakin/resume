@@ -4,17 +4,16 @@ extends ./layout.jade
 block content
   header.main
     h1= locals.fullName
-    img.photo(src='img/photo.png')
+    img.photo(src=locals.photo)
 
   section.personal-information
     header: h2 Personal information
     article
 
-      .name Joaquin
-      .full-name Oltra Hernandez, Joaquin
-      .phone (0034) 600078947
-      .email joaquin@chimeces.com
-      .nationality Spain
+      .full-name= locals.fullName
+      .phone= locals.phone
+      .email= locals.email
+      .nationality= locals.nationality
 
       - var date = (new Date()).getFullYear() - 1985
       .age= date
@@ -23,7 +22,7 @@ block content
     header: h2 Current situation
     article
       h3 Occupational field
-      .value Software developer, Javascript programmer, Web developer
+      .value locals.field
 
     article
       :markdown

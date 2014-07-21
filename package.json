@@ -6,23 +6,23 @@
   "scripts": {
     "watch-stylus": "stylus -w resume.styl --out static",
     "build-stylus": "stylus resume.styl --out static",
-
-    "build-yaml": "js-yaml resume.yaml > static/resume.json",
-    "build-jade": "jade resume.jade --out static --obj static/resume.json",
-    "build-html": "npm run build-yaml && npm run build-jade",
-
+    "build-html": "./bin/build-html.js",
     "watch": "npm-watch & npm run watch-stylus",
     "build": "npm run build-html & npm run build-stylus",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "watch": {
-    "build-html": ["resume.jade", "resume.yaml"]
+    "build-html": [
+      "resume.jade",
+      "resume.yaml"
+    ]
   },
   "author": "Joaquin Oltra",
   "license": "GPLv3",
   "devDependencies": {
     "jade": "^1.4.2",
     "js-yaml": "^3.1.0",
+    "lodash.assign": "^2.4.1",
     "marked": "^0.3.2",
     "npm-watch": "0.0.0",
     "stylus": "^0.47.1"

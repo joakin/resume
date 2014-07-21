@@ -3,17 +3,17 @@ extends ./layout.jade
 
 block content
   header.main
-    h1= locals.fullName
-    img.photo(src=locals.photo)
+    h1= fullName
+    img.photo(src=photo)
 
   section.personal-information
     header: h2 Personal information
     article
 
-      .full-name= locals.fullName
-      .phone= locals.phone
-      .email= locals.email
-      .nationality= locals.nationality
+      .full-name= fullName
+      .phone= phone
+      .email= email
+      .nationality= nationality
 
       - var date = (new Date()).getFullYear() - 1985
       .age= date
@@ -22,34 +22,9 @@ block content
     header: h2 Current situation
     article
       h3 Occupational field
-      .value locals.field
+      .value= field
 
-    article
-      :markdown
-        I've given a workshop on Clojurescript for the FutureJS conference
-        (April - May 2014), materials are online:
-
-        * [FutureJS site](http://futurejs.org/workshops/diving-into-clojurescript)
-        * [Slides](http://slides.com/joakino/diving-into-clojurescript/)
-        * [GitHub repo - Exercises and explanations](https://github.com/joakin/diving-into-clojurescript-exercises/)
-
-        I've enjoy reading technical books, developing random side projects and
-        learning and exploring new technologies that interest me, ranging from
-        front end development, to backend coding and databases, and finally
-        systems administration.
-
-        Things I've been interested and diving into in the last year include:
-
-        Clojure and Clojurescript, Functional programming, Node.js, React.js,
-        JavaScript (ES6), Promises (standalone and with generators), CSP
-        (Generators and channels, core.async), Coffeescript, several HTML5
-        APIs, Couchdb, Ansible (system administration)
-
-        For a sample of code, here are some of my last side projects I open
-          sourced:
-
-        * [ClojureScript snake game](https://github.com/joakin/cnake)
-        * [Coffee node cli for organizing photos](https://github.com/joakin/galeria-cli)
+    article!= md(intro)
 
   section.work-experience
     header: h2 Work experience

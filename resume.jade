@@ -28,54 +28,13 @@ block content
 
   section.work-experience
     header: h2 Work experience
-    article
-      .employer OHIM
-      .date September 2010 - June 2013
-      .position Freelance web developer, Javascript programmer, Senior analyst programmer
-      .activities
-        :markdown
-          While freelance contracting for OHIM, I went mainly through two
-          different big projects, OHIM eSearch (JS web application) and the new
-          OHIM Website (public site and suite of web tools).
-
-          #### eSearch
-
-          Search engine for OHIM, I was involved in creating the single page
-          application using Javascript, CSS3 with LESS, Backbone. This
-          application got to about 25KLOC of code.
-
-          * [Read more](http://chimeces.com/projects/2013/01/01/esearch/)
-          * [Website](https://oami.europa.eu/eSearch/)
-
-          #### New OHIM website and suite of tools
-
-          New site and group of web tools, full redesign and layout using
-          semantic HTML and modern CSS3 while maintaining graceful degradation
-          and implementing responsive design. Implemented a wiki and style
-          guide with live components and docs and different themes with
-          a corporate framework to be used as a base in the site and tools.
-
-          * [Read more](http://chimeces.com/projects/2013/05/01/ohim-website/)
-          * [Website](https://oami.europa.eu/ohimportal/en/)
-
-          #### Activities and responsibilities
-
-          * Javascript development (JS with Backbone)
-          * Interface and interactions design (mockups, design)
-          * Web design
-          * Front end development. Creation of web applications (css3, html5, js)
-          * Cross browser layouts and styles.
-          * Training (web technologies)
-          * Standardization (style guide, wiki with components and company theme)
-          * Web dev structure and process set up
-          * Help with Java w/ Spring development.
-
-    article
-      .employer OHIM
-      .date September 2010 - June 2013
-      .position Freelance web developer, Javascript programmer, Senior analyst programmer
-      .activities
-        :markdown
+    - work.forEach(function(job) {
+      article
+        .employer= job.employer
+        .date= job.date
+        .position= job.position
+        .activities!= md(job.activities)
+    -});
 
   p
     :markdown

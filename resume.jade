@@ -18,6 +18,7 @@ block content
       - var date = (new Date()).getFullYear() - 1985
       .age= date
 
+
   section.current-situation
     header: h2 Current situation
     article
@@ -31,10 +32,16 @@ block content
     - work.forEach(function(job) {
       article
         .employer= job.employer
-        .date= job.date
+        .date= job.when
         .position= job.position
-        .activities!= md(job.activities)
+        .activities!= md(job.what)
     - });
+
+  section.education
+    header: h2 Education
+    .date= edu.when
+    .title= edu.what
+    .from= edu.who
 
   p
     :markdown

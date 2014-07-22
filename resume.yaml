@@ -35,9 +35,9 @@ intro: |
 
 work:
   - employer: Freelance (Various)
-    date: December 2013 - Now
+    when: December 2013 - Now
     position: Freelance web developer, Javascript programmer, HTML & CSS programmer
-    activities: |
+    what: |
       Freelance contracting for different clients.
 
       * Data visualizations dashboard with d3

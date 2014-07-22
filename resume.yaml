@@ -1,6 +1,6 @@
 
 fullName: Joaquin Oltra Hernandez
-photo: img/photo.png
+photo: photo.jpg
 phone: (0034) 600078947
 email: joaquin@chimeces.com
 nationality: Spain
@@ -135,4 +135,64 @@ edu:
   when: 2004-2009
   what: Computer Science Engineer (Ingeniero en informatica)
   who: University of Alicante
+
+skills:
+  languages:
+    - which: Spanish
+      level: Mother tongue
+    - which: English
+      level: Proficient (C1)
+      titles:
+        - CAE (Certificate in Advanced English)
+        - FCE
+
+  tech:
+    - text: VCS
+      children:
+        - Git
+        - Svn
+    - text: Frontend
+      children:
+        - Html 5
+        - Css 3
+        - JS (ES 3, 5, 6)
+        - CoffeeScript
+        - React.js
+        - Backbone.js
+    - text: Design and use of graphic design tools (Photoshop, Gimp, Pixelmator...)
+    - text: Systems administration
+      children:
+        - OS X
+        - Linux
+    - text: Polyglot programmer
+      children:
+        - Node.js
+        - Clojure(script)
+        - Python
+        - Haskell
+        - Several transpile-to-JS languages
+
+  art:
+    - Good taste developed for design and UX through years of self-taught skills.
+    - Photography and photo retouching
+    - Web design, and medium level graphic design skills
+
+other:
+  car: Own vehicle
+
+  remote: Available to travel, can't relocate permanently right now
+
+  trips:
+    - >
+      07/2013 - 12/2013: South America (Peru, Bolivia, Chile, Argentina)
+    - >
+      05/2013 - 05/2013: USA (Chicago - New York)
+    - >
+      02/2012 - 04/2012: North India
+    - >
+      09/2008 - 03/2009: Aachen (Germany): Erasmus Trainee
+    - >
+      07/2003 - 09/2003: Oxford (England) in language school
+    - >
+      07/2001 - 09/2001: Brighton (England) in language school
 

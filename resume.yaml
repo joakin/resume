@@ -9,8 +9,8 @@ birthDate: 17-12-85
 field: Software developer, Javascript programmer, Web developer
 
 intro: |
-  I've given a workshop on Clojurescript for the FutureJS conference (April
-  - May 2014), materials are online:
+  I've given a workshop on Clojurescript for the FutureJS conference
+  (April - May 2014), materials are online:
 
   * [FutureJS site](http://futurejs.org/workshops/diving-into-clojurescript)
   * [Slides](http://slides.com/joakino/diving-into-clojurescript/)
@@ -52,14 +52,14 @@ work:
 
 
   - employer: OHIM
-    date: September 2010 - June 2013
+    when: September 2010 - June 2013
     position: Freelance web developer, Javascript programmer, Senior analyst programmer
-    activities: |
+    what: |
       While freelance contracting for OHIM, I went mainly through two different
       big projects, OHIM eSearch (JS web application) and the new OHIM Website
       (public site and suite of web tools).
 
-      #### eSearch
+      ##### eSearch
 
       Search engine for OHIM, I was involved in creating the single page
       application using Javascript, CSS3 with LESS, Backbone. This application
@@ -68,7 +68,7 @@ work:
       * [Read more](http://chimeces.com/projects/2013/01/01/esearch/)
       * [Website](https://oami.europa.eu/eSearch/)
 
-      #### New OHIM website and suite of tools
+      ##### New OHIM website and suite of tools
 
       New site and group of web tools, full redesign and layout using semantic
       HTML and modern CSS3 while maintaining graceful degradation and
@@ -79,7 +79,7 @@ work:
       * [Read more](http://chimeces.com/projects/2013/05/01/ohim-website/)
       * [Website](https://oami.europa.eu/ohimportal/en/)
 
-      #### Activities and responsibilities
+      ##### Activities and responsibilities
 
       * Javascript development (JS with Backbone)
       * Interface and interactions design (mockups, design)

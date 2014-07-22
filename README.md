@@ -4,10 +4,30 @@ CV
 
 This is my resume, it is built with jade and stylus.
 
+### How to
+
+Main tasks:
 ```
+# Build the site at static/
 npm run build
-# or to watch:
+
+# Build  & watch the site at static/
+# Livereload server at http://localhost:35729/resume.html
 npm run watch
+```
+
+Secondary tasks
+```
+# Livereload server for static/ at http://localhost:35729/resume.html
+npm run serve
+
+# Watch and build stylus
+npm run watch-stylus
+# Build stylus
+npm run build-stylus
+
+# Build jade & js-yaml to static/resume.html
+npm run build-html
 ```
 
 Files are generated in a `static/` folder

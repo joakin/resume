@@ -4,10 +4,11 @@
   "description": "Joaquin Oltra resume",
   "main": "index.js",
   "scripts": {
+    "serve": "./node_modules/.bin/livereloadx -s ./static/",
     "watch-stylus": "stylus -w resume.styl --out static",
     "build-stylus": "stylus resume.styl --out static",
     "build-html": "./bin/build-html.js",
-    "watch": "npm-watch & npm run watch-stylus",
+    "watch": "npm-watch & npm run watch-stylus & npm run serve",
     "build": "npm run build-html & npm run build-stylus",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,6 +24,7 @@
   "devDependencies": {
     "jade": "^1.4.2",
     "js-yaml": "^3.1.0",
+    "livereloadx": "^0.3.5",
     "lodash.assign": "^2.4.1",
     "marked": "^0.3.2",
     "npm-watch": "0.0.0",

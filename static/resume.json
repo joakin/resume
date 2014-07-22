@@ -1,0 +1,18 @@
+{
+  "fullName": "Joaquin Oltra Hernandez",
+  "photo": "img/photo.png",
+  "phone": "(0034) 600078947",
+  "email": "joaquin@chimeces.com",
+  "nationality": "Spain",
+  "birthDate": "17-12-85",
+  "field": "Software developer, Javascript programmer, Web developer",
+  "intro": "I've given a workshop on Clojurescript for the FutureJS conference (April\n- May 2014), materials are online:\n\n* [FutureJS site](http://futurejs.org/workshops/diving-into-clojurescript)\n* [Slides](http://slides.com/joakino/diving-into-clojurescript/)\n* [GitHub repo - Exercises and explanations](https://github.com/joakin/diving-into-clojurescript-exercises/)\n\nI've enjoy reading technical books, developing random side projects and\nlearning and exploring new technologies that interest me, ranging from front\nend development, to backend coding and databases, and finally systems\nadministration.\n\nThings I've been interested and diving into in the last year include:\n\nClojure and Clojurescript, Functional programming, Node.js, React.js,\nJavaScript (ES6), Promises (standalone and with generators), CSP (Generators\nand channels, core.async), Coffeescript, several HTML5 APIs, Couchdb, Ansible\n(system administration)\n\nFor a sample of code, here are some of my last side projects I open sourced:\n\n* [ClojureScript snake game](https://github.com/joakin/cnake)\n* [Coffee node cli for organizing photos](https://github.com/joakin/galeria-cli)\n",
+  "work": [
+    {
+      "employer": "OHIM",
+      "date": "September 2010 - June 2013",
+      "position": "Freelance web developer, Javascript programmer, Senior analyst programmer",
+      "activities": "While freelance contracting for OHIM, I went mainly through two different\nbig projects, OHIM eSearch (JS web application) and the new OHIM Website\n(public site and suite of web tools).\n\n#### eSearch\n\nSearch engine for OHIM, I was involved in creating the single page\napplication using Javascript, CSS3 with LESS, Backbone. This application\ngot to about 25KLOC of code.\n\n* [Read more](http://chimeces.com/projects/2013/01/01/esearch/)\n* [Website](https://oami.europa.eu/eSearch/)\n\n#### New OHIM website and suite of tools\n\nNew site and group of web tools, full redesign and layout using semantic\nHTML and modern CSS3 while maintaining graceful degradation and\nimplementing responsive design. Implemented a wiki and style guide with\nlive components and docs and different themes with a corporate framework\nto be used as a base in the site and tools.\n\n* [Read more](http://chimeces.com/projects/2013/05/01/ohim-website/)\n* [Website](https://oami.europa.eu/ohimportal/en/)\n\n#### Activities and responsibilities\n\n* Javascript development (JS with Backbone)\n* Interface and interactions design (mockups, design)\n* Web design\n* Front end development. Creation of web applications (css3, html5, js)\n* Cross browser layouts and styles.\n* Training (web technologies)\n* Standardization (style guide, wiki with components and company theme)\n* Web dev structure and process set up\n* Help with Java w/ Spring development.\n"
+    }
+  ]
+}

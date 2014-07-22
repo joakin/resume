@@ -91,4 +91,48 @@ work:
       * Web dev structure and process set up
       * Help with Java w/ Spring development.
 
+  - employer: CESSER
+    when: 2010
+    position: Web developer
+    what: |
+      Implement styles and layouts, themes and js plugins for client websites
+      that used Drupal (mysql, php).
+
+      * CSS
+      * JS, jQuery, and jQuery plugins
+      * Html and php templates
+
+  - employer: University of Alicante
+    when: 2008 - 2010
+    position: Web developer, Javascript programmer
+    what: |
+      Design and development of a browser application to create, layout and
+      fill magazines, and generate a print version in PDF.
+
+      * Web design and interaction
+      * Frontend
+        * JS, jQuery
+        * CSS
+        * HTML
+      * Backend
+        * JSP
+        * MySql with JDBC
+      * Ops
+        * Linux servers
+        * Firefox cli for rendering PDFs
+
+      Support for the teaching staff of a masters course, development and
+      mantainance of the Master's website.
+
+  - employer: Diario Informacion / Newspaper
+    when: 2006 - 2008
+    position: Systems administrator
+    what: |
+      Administrate Windows, Linux and OSx machines and servers, network
+      infrastructure and customer support (editors and journalists).
+
+edu:
+  when: 2004-2009
+  what: Computer Science Engineer (Ingeniero en informatica)
+  who: University of Alicante
 

@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "serve": "./node_modules/.bin/livereloadx -s ./static/",
-    "watch-stylus": "stylus -w resume.styl --out static",
-    "build-stylus": "stylus resume.styl --out static",
+    "watch-stylus": "./node_modules/.bin/stylus -w resume.styl --out static -I ./node_modules",
+    "build-stylus": "./node_modules/.bin/stylus resume.styl --out static -I ./node_modules",
     "build-html": "./bin/build-html.js",
     "watch": "npm-watch & npm run watch-stylus & npm run serve",
     "build": "npm run build-html & npm run build-stylus",
@@ -28,6 +28,8 @@
     "lodash.assign": "^2.4.1",
     "marked": "^0.3.2",
     "npm-watch": "0.0.0",
-    "stylus": "^0.47.1"
+    "stylus": "^0.47.1",
+    "nib": "~1.0.3",
+    "stylus-normalize": "~3.0.0"
   }
 }

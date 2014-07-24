@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>CV Joaquin Oltra</title>
-    <link rel="stylesheet" href="resume.css">
+    <link type="text/css" rel="stylesheet" media="all" href="resume.css">
   </head>
   <body>
     <header>
@@ -17,11 +17,21 @@
           <h2>Personal information</h2>
         </header>
         <article>
-          <div class="full-name">Joaquin Oltra Hernandez</div>
-          <div class="phone">(0034) 600078947</div>
-          <div class="email">joaquin@chimeces.com</div>
-          <div class="nationality">Spain</div>
-          <div class="age">29</div>
+          <div class="kv full-name">
+            <label>Full name</label><span>Joaquin Oltra Hernandez</span>
+          </div>
+          <div class="kv phone">
+            <label>Phone</label><span>(0034) 600078947</span>
+          </div>
+          <div class="kv email">
+            <label>Email</label><span>joaquin@chimeces.com</span>
+          </div>
+          <div class="kv nationality">
+            <label>Nationality</label><span>Spain</span>
+          </div>
+          <div class="kv age">
+            <label>Age</label><span>29</span>
+          </div>
         </article>
       </section>
       <section class="current-situation">
@@ -29,20 +39,22 @@
           <h2>Current situation</h2>
         </header>
         <article>
-          <h3>Occupational field</h3>
-          <div class="value">Software developer, Javascript programmer, Web developer</div>
+          <div class="kv">
+            <label>Field</label><span>Software developer, Javascript programmer, Web developer</span>
+          </div>
         </article>
-        <article><p>I&#39;ve given a workshop on Clojurescript for the FutureJS conference
+        <article><p>I&#39;m a programmer and web developer specialized in JS who enjoys reading
+technical books, developing random playful side projects and learning and
+exploring new technologies that interest me, ranging from front end
+development and architecture, browser apis, visualizations and creative
+coding, to backend coding and databases, and developer ops.</p>
+<p>I&#39;ve recently given a workshop on Clojurescript for the FutureJS conference
 (April - May 2014), materials are online:</p>
 <ul>
 <li><a href="http://futurejs.org/workshops/diving-into-clojurescript">FutureJS site</a></li>
 <li><a href="http://slides.com/joakino/diving-into-clojurescript/">Slides</a></li>
 <li><a href="https://github.com/joakin/diving-into-clojurescript-exercises/">GitHub repo - Exercises and explanations</a></li>
 </ul>
-<p>I&#39;ve enjoy reading technical books, developing random side projects and
-learning and exploring new technologies that interest me, ranging from front
-end development, to backend coding and databases, and finally systems
-administration.</p>
 <p>Things I&#39;ve been interested and diving into in the last year include:</p>
 <p>Clojure and Clojurescript, Functional programming, Node.js, React.js,
 JavaScript (ES6), Promises (standalone and with generators), CSP (Generators
@@ -60,8 +72,10 @@ and channels, core.async), Coffeescript, several HTML5 APIs, Couchdb, Ansible
           <h2>Work experience</h2>
         </header>
         <article>
-          <div class="employer">Freelance (Various)</div>
-          <div class="date">December 2013 - Now</div>
+          <header>
+            <div class="employer">Freelance (Various)</div>
+            <div class="date">December 2013 - Now</div>
+          </header>
           <div class="position">Freelance web developer, Javascript programmer, HTML &amp; CSS programmer</div>
           <div class="activities"><p>Freelance contracting for different clients.</p>
 <ul>
@@ -82,8 +96,10 @@ and channels, core.async), Coffeescript, several HTML5 APIs, Couchdb, Ansible
 </div>
         </article>
         <article>
-          <div class="employer">OHIM</div>
-          <div class="date">September 2010 - June 2013</div>
+          <header>
+            <div class="employer">OHIM</div>
+            <div class="date">September 2010 - June 2013</div>
+          </header>
           <div class="position">Freelance web developer, Javascript programmer, Senior analyst programmer</div>
           <div class="activities"><p>While freelance contracting for OHIM, I went mainly through two different
 big projects, OHIM eSearch (JS web application) and the new OHIM Website
@@ -121,8 +137,10 @@ to be used as a base in the site and tools.</p>
 </div>
         </article>
         <article>
-          <div class="employer">CESSER</div>
-          <div class="date">2010</div>
+          <header>
+            <div class="employer">CESSER</div>
+            <div class="date">2010</div>
+          </header>
           <div class="position">Web developer</div>
           <div class="activities"><p>Implement styles and layouts, themes and js plugins for client websites
 that used Drupal (mysql, php).</p>
@@ -134,8 +152,10 @@ that used Drupal (mysql, php).</p>
 </div>
         </article>
         <article>
-          <div class="employer">University of Alicante</div>
-          <div class="date">2008 - 2010</div>
+          <header>
+            <div class="employer">University of Alicante</div>
+            <div class="date">2008 - 2010</div>
+          </header>
           <div class="position">Web developer, Javascript programmer</div>
           <div class="activities"><p>Design and development of a browser application to create, layout and
 fill magazines, and generate a print version in PDF.</p>
@@ -163,8 +183,10 @@ mantainance of the Master&#39;s website.</p>
 </div>
         </article>
         <article>
-          <div class="employer">Diario Informacion / Newspaper</div>
-          <div class="date">2006 - 2008</div>
+          <header>
+            <div class="employer">Diario Informacion / Newspaper</div>
+            <div class="date">2006 - 2008</div>
+          </header>
           <div class="position">Systems administrator</div>
           <div class="activities"><p>Administrate Windows, Linux and OSx machines and servers, network
 infrastructure and customer support (editors and journalists).</p>
@@ -175,9 +197,11 @@ infrastructure and customer support (editors and journalists).</p>
         <header>
           <h2>Education</h2>
         </header>
-        <div class="date">2004-2009</div>
-        <div class="title">Computer Science Engineer (Ingeniero en informatica)</div>
-        <div class="from">University of Alicante</div>
+        <article>
+          <div class="date">2004-2009</div>
+          <div class="title">Computer Science Engineer (Ingeniero en informatica)</div>
+          <div class="from">University of Alicante</div>
+        </article>
       </section>
       <section class="skills">
         <header>
@@ -187,126 +211,87 @@ infrastructure and customer support (editors and journalists).</p>
           <header>
             <h3>Languages</h3>
           </header>
-          <ul></ul>
-          <li>
-            <div class="name">Spanish</div>
-            <div class="level">Mother tongue</div>
-          </li>
-          <li>
-            <div class="name">English</div>
-            <div class="level">Proficient (C1)</div>
-            <ul class="titles">
-              <li>CAE (Certificate in Advanced English)</li>
-              <li>FCE</li>
-            </ul>
-          </li>
+          <ul>
+            <li><span class="name">Spanish</span>
+              <spanspan class="level">Mother tongue</spanspan>
+            </li>
+            <li><span class="name">English</span>
+              <spanspan class="level">Proficient (C1)</spanspan>
+              <ul class="titles">
+                <li>CAE (Certificate in Advanced English)</li>
+                <li>FCE</li>
+              </ul>
+            </li>
+          </ul>
         </article>
         <article class="tech">
           <header>
             <h3>Technical skills</h3>
           </header>
-          <ul></ul>
-          <li>
-            <div class="name">VCS</div>
-            <ul></ul>
-            <li>
-              <div class="name">Git</div>
-            </li>
-            <li>
-              <div class="name">Svn</div>
-            </li>
-          </li>
-          <li>
-            <div class="name">Frontend</div>
-            <ul></ul>
-            <li>
-              <div class="name">Html 5</div>
-            </li>
-            <li>
-              <div class="name">Css 3</div>
-            </li>
-            <li>
-              <div class="name">JS (ES 3, 5, 6)</div>
-            </li>
-            <li>
-              <div class="name">CoffeeScript</div>
-            </li>
-            <li>
-              <div class="name">React.js</div>
-            </li>
-            <li>
-              <div class="name">Backbone.js</div>
-            </li>
-          </li>
-          <li>
-            <div class="name">Design and use of graphic design tools (Photoshop, Gimp, Pixelmator...)</div>
-          </li>
-          <li>
-            <div class="name">Systems administration</div>
-            <ul></ul>
-            <li>
-              <div class="name">OS X</div>
-            </li>
-            <li>
-              <div class="name">Linux</div>
-            </li>
-          </li>
-          <li>
-            <div class="name">Polyglot programmer</div>
-            <ul></ul>
-            <li>
-              <div class="name">Node.js</div>
-            </li>
-            <li>
-              <div class="name">Clojure(script)</div>
-            </li>
-            <li>
-              <div class="name">Python</div>
-            </li>
-            <li>
-              <div class="name">Haskell</div>
-            </li>
-            <li>
-              <div class="name">Several transpile-to-JS languages</div>
-            </li>
-          </li>
+          <ul>
+            <li class="name">VCS
+              <ul>
+                <li class="name">Git</li>
+                <li class="name">Svn</li>
+              </ul></li>
+            <li class="name">Frontend
+              <ul>
+                <li class="name">Html 5</li>
+                <li class="name">Css 3</li>
+                <li class="name">JS (ES 3, 5, 6)</li>
+                <li class="name">CoffeeScript</li>
+                <li class="name">React.js</li>
+                <li class="name">Backbone.js</li>
+              </ul></li>
+            <li class="name">Design and use of graphic design tools (Photoshop, Gimp, Pixelmator...)</li>
+            <li class="name">Systems administration
+              <ul>
+                <li class="name">OS X</li>
+                <li class="name">Linux</li>
+              </ul></li>
+            <li class="name">Polyglot programmer
+              <ul>
+                <li class="name">Node.js</li>
+                <li class="name">Clojure(script)</li>
+                <li class="name">Python</li>
+                <li class="name">Haskell</li>
+                <li class="name">Several transpile-to-JS languages</li>
+              </ul></li>
+          </ul>
         </article>
         <article class="art">
           <header>
             <h3>Artistic skills</h3>
           </header>
-          <ul></ul>
-          <li>
-            <div class="name">Good taste developed for design and UX through years of self-taught skills.</div>
-          </li>
-          <li>
-            <div class="name">Photography and photo retouching</div>
-          </li>
-          <li>
-            <div class="name">Web design, and medium level graphic design skills</div>
-          </li>
+          <ul>
+            <li class="name">Good taste developed for design and UX through years of self-taught skills.</li>
+            <li class="name">Photography and photo retouching</li>
+            <li class="name">Web design, and medium level graphic design skills</li>
+          </ul>
         </article>
       </section>
       <section class="other">
         <header>
           <h2>Additional information</h2>
         </header>
-        <div class="car">Own vehicle</div>
-        <div class="remote">Available to travel, can't relocate permanently right now</div>
-        <ul class="trips">
-          <li>07/2013 - 12/2013: South America (Peru, Bolivia, Chile, Argentina)
+        <article>
+          <div class="car">Own vehicle</div>
+          <div class="remote">Available to travel, can't relocate permanently right now</div>
+          <ul class="trips">
+            <li>07/2013 - 12/2013: South America (Peru, Bolivia, Chile, Argentina)
 </li>
-          <li>05/2013 - 05/2013: USA (Chicago - New York)
+            <li>05/2013 - 05/2013: USA (Chicago - New York)
 </li>
-          <li>02/2012 - 04/2012: North India
+            <li>02/2012 - 04/2012: North India
 </li>
-          <li>09/2008 - 03/2009: Aachen (Germany): Erasmus Trainee
+            <li>09/2008 - 03/2009: Aachen (Germany): Erasmus Trainee
 </li>
-          <li>07/2003 - 09/2003: Oxford (England) in language school
+            <li>07/2003 - 09/2003: Oxford (England) in language school
 </li>
-          <li>07/2001 - 09/2001: Brighton (England) in language school
+            <li>07/2001 - 09/2001: Brighton (England) in language school
 </li>
-        </ul>
+          </ul>
+        </article>
       </section>
     </div>
     <footer>

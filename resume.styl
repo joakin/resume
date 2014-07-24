@@ -1,3 +1,124 @@
+@import "nib"
+@import "stylus-normalize/normalize"
+
+text-color = #333
+light-text-color = #aaa
+light-bg = #ddd
+
+@font-face {
+    font-family: Latin Modern Roman;
+    src: url('fonts/lmroman10-regular-webfont.eot');
+    src: url('fonts/lmroman10-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/lmroman10-regular-webfont.woff') format('woff'),
+         url('fonts/lmroman10-regular-webfont.ttf') format('truetype'),
+         url('fonts/lmroman10-regular-webfont.svg#latin_modern_roman10_regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Latin Modern Roman;
+    src: url('fonts/lmroman10-bold-webfont.eot');
+    src: url('fonts/lmroman10-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/lmroman10-bold-webfont.woff') format('woff'),
+         url('fonts/lmroman10-bold-webfont.ttf') format('truetype'),
+         url('fonts/lmroman10-bold-webfont.svg#latin_modern_roman10_bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+
+
+*, *:before, *:after
+  box-sizing inherit
+
+
+html, body
+  margin 0
+  padding 0
+  box-sizing border-box
+  font-size 20px
+
+ul
+  list-style-position inside
 
 body
-  color black
+  color text-color
+  font-family Latin Modern Roman, serif
+
+h1, h2, h3, h4, h5, h6
+  margin 0
+
+body>header
+  background-color light-bg
+  color white
+  text-align center
+  h1
+    margin 0
+    padding 10px
+
+.kv
+  display: flex
+  >*
+    display inline-block
+    padding 4px 10px
+  :first-child
+    text-align right
+    color light-text-color
+    flex 1
+  :last-child
+    flex 2
+
+#container
+  max-width 100ex
+  padding 0 20px
+  margin 0 auto
+
+  >header
+    display flex
+    justify-content space-between
+    align-items center
+    margin 20px 0
+    img.photo
+      width 100px
+      border-radius 50px
+
+section
+  margin-bottom 40px
+  >header
+    background-color light-bg
+    padding 10px 10px
+    margin-bottom 10px
+    >*
+      margin 0
+  >article
+    border-top 1px solid light-bg
+    padding-top 10px
+    margin-bottom 10px
+
+.work-experience
+  article
+    header
+      display flex
+      margin-bottom 10px
+      .employer,.date
+        padding 10px 20px
+        border 1px solid light-bg
+      .employer
+        // border-radius 15px 0 0 15px
+        background-color light-bg
+        font-weight bold
+      .date
+        flex 1
+        // border-radius 0 15px 15px 0
+
+
+
+
+
+
+footer
+  font-size 0.8rem
+  padding 10px 10%
+  background-color light-bg

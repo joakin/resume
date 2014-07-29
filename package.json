@@ -30,6 +30,7 @@
     "npm-watch": "0.0.0",
     "stylus": "^0.47.1",
     "nib": "~1.0.3",
-    "stylus-normalize": "~3.0.0"
+    "stylus-normalize": "~3.0.0",
+    "nodepdf": "~1.0.1"
   }
 }

@@ -8,8 +8,9 @@
     "watch-stylus": "./node_modules/.bin/stylus -w resume.styl --out static -I ./node_modules",
     "build-stylus": "./node_modules/.bin/stylus resume.styl --out static -I ./node_modules",
     "build-html": "./bin/build-html.js",
+    "build-pdf": "./bin/build-pdf.js",
     "watch": "npm-watch & npm run watch-stylus & npm run serve",
-    "build": "npm run build-html & npm run build-stylus",
+    "build": "npm run build-html & npm run build-stylus & npm run build-pdf",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "watch": {
@@ -17,6 +18,10 @@
       "resume.jade",
       "layout.jade",
       "resume.yaml"
+    ],
+    "build-pdf": [
+      "static/resume.html",
+      "static/resume.css"
     ]
   },
   "author": "Joaquin Oltra",

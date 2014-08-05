@@ -23,7 +23,7 @@ var options = {
   'zoomFactor': 0.75
 };
 
-NodePDF.render('./static/resume.html', './static/resume.pdf', options, function(err, filePath) {
+NodePDF.render('./static/index.html', './static/resume.pdf', options, function(err, filePath) {
   if (err) { console.error(err); return; }
   console.log('PDF file written at', filePath);
 });

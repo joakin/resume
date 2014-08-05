@@ -12,13 +12,13 @@ Main tasks:
 npm run build
 
 # Build  & watch the site at static/ and the pdf
-# Livereload server at http://localhost:35729/resume.html
+# Livereload server at http://localhost:35729/index.html
 npm run watch
 ```
 
 Secondary tasks
 ```
-# Livereload server for static/ at http://localhost:35729/resume.html
+# Livereload server for static/ at http://localhost:35729/index.html
 npm run serve
 
 # Watch and build stylus
@@ -26,7 +26,7 @@ npm run watch-stylus
 # Build stylus
 npm run build-stylus
 
-# Build jade & js-yaml to static/resume.html
+# Build jade & js-yaml to static/index.html
 npm run build-html
 
 # Build the pdf from the site at static/ in static/resume.pdf

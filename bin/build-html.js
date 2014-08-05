@@ -8,7 +8,7 @@ var md = require('marked');
 var extend = require('lodash.assign');
 
 var root = __dirname + '/../';
-var htmlPath = 'static/resume.html';
+var htmlPath = 'static/index.html';
 var data = yaml.safeLoad(fs.readFileSync(root + 'resume.yaml', 'utf8'));
 var templateContents = fs.readFileSync(root + 'resume.jade', 'utf8');
 

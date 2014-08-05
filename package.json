@@ -20,7 +20,7 @@
       "resume.yaml"
     ],
     "build-pdf": [
-      "static/resume.html",
+      "static/index.html",
       "static/resume.css"
     ]
   },

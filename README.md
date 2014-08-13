@@ -26,9 +26,13 @@ npm run watch-stylus
 # Build stylus
 npm run build-stylus
 
+# Watch and build jade & js-yaml to static/index.html
+npm run watch-html
 # Build jade & js-yaml to static/index.html
 npm run build-html
 
+# Watch and build the pdf from the site at static/ in static/resume.pdf
+npm run watch-pdf
 # Build the pdf from the site at static/ in static/resume.pdf
 npm run build-pdf
 ```

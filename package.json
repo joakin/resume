@@ -3,6 +3,20 @@
   "version": "0.0.0",
   "description": "Joaquin Oltra resume",
   "main": "index.js",
+  "author": "Joaquin Oltra",
+  "license": "GPLv3",
+  "devDependencies": {
+    "jade": "^1.4.2",
+    "js-yaml": "^3.1.0",
+    "livereloadx": "^0.3.5",
+    "lodash.assign": "^2.4.1",
+    "marked": "^0.3.2",
+    "npm-watch": "0.0.0",
+    "stylus": "^0.47.1",
+    "nib": "~1.0.3",
+    "stylus-normalize": "~3.0.0",
+    "nodepdf": "~1.0.1"
+  },
   "scripts": {
     "serve": "./node_modules/.bin/livereloadx -s ./static/",
     "watch-stylus": "./node_modules/.bin/stylus -w resume.styl --out static -I ./node_modules",
@@ -23,19 +37,5 @@
       "static/index.html",
       "static/resume.css"
     ]
-  },
-  "author": "Joaquin Oltra",
-  "license": "GPLv3",
-  "devDependencies": {
-    "jade": "^1.4.2",
-    "js-yaml": "^3.1.0",
-    "livereloadx": "^0.3.5",
-    "lodash.assign": "^2.4.1",
-    "marked": "^0.3.2",
-    "npm-watch": "0.0.0",
-    "stylus": "^0.47.1",
-    "nib": "~1.0.3",
-    "stylus-normalize": "~3.0.0",
-    "nodepdf": "~1.0.1"
   }
 }

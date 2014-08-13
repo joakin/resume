@@ -13,7 +13,6 @@
     "marked": "^0.3.2",
     "nib": "~1.0.3",
     "nodepdf": "~1.0.1",
-    "npm-watch": "0.0.0",
     "stylus": "^0.47.1",
     "stylus-normalize": "~3.0.0",
     "wr": "^1.3.1"
@@ -24,24 +23,15 @@
     "watch-stylus": "./node_modules/.bin/stylus -w resume.styl --out static -I ./node_modules",
     "build-stylus": "./node_modules/.bin/stylus resume.styl --out static -I ./node_modules",
 
+    "watch-html": "./node_modules/.bin/wr \"./bin/build-html.js\" resume.jade layout.jade resume.yaml",
     "build-html": "./bin/build-html.js",
 
+    "watch-pdf": "./node_modules/.bin/wr \"./bin/build-pdf.js\" static/index.html static/resume.css",
     "build-pdf": "./bin/build-pdf.js",
 
-    "watch": "npm-watch & npm run watch-stylus & npm run serve",
+    "watch": "npm run watch-html & npm run watch-pdf & npm run watch-stylus & npm run serve",
     "build": "npm run build-html & npm run build-stylus & npm run build-pdf",
 
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "watch": {
-    "build-html": [
-      "resume.jade",
-      "layout.jade",
-      "resume.yaml"
-    ],
-    "build-pdf": [
-      "static/index.html",
-      "static/resume.css"
-    ]
   }
 }

@@ -48,6 +48,8 @@ html, body
   padding 0
   box-sizing border-box
   font-size 20px
+  @media print
+    font-size 16px
 
 ul
   list-style-position inside
@@ -65,7 +67,12 @@ body>header
   text-align center
   h1
     margin 0
-    padding 10px
+  a
+    display inline-block
+    padding 0 10px 10px
+
+  @media print
+    display none
 
 .kv
   full-width-table fixed
@@ -81,6 +88,8 @@ body>header
 
 #container
   max-width 100ex
+  @media print
+    max-width none
   padding 0 20px
   margin 0 auto
 

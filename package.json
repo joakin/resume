@@ -11,10 +11,10 @@
     "livereloadx": "^0.3.5",
     "lodash.assign": "^2.4.1",
     "marked": "^0.3.2",
-    "nib": "~1.0.3",
-    "nodepdf": "~1.0.1",
+    "nib": "^1.0.3",
+    "nodepdf": "^1.0.1",
     "stylus": "^0.47.1",
-    "stylus-normalize": "~3.0.0",
+    "stylus-normalize": "^3.0.0",
     "watch-run": "^1.0.0"
   },
   "scripts": {

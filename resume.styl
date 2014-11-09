@@ -29,6 +29,13 @@ light-bg = #ddd
 }
 
 
+full-width-table(layout=auto)
+  width 100%
+  display table
+  table-layout layout
+  >*
+    display table-cell
+    vertical-align middle
 
 
 
@@ -61,16 +68,16 @@ body>header
     padding 10px
 
 .kv
-  display: flex
+  full-width-table fixed
   >*
-    display inline-block
-    padding 4px 10px
+    padding 4px 10%
   :first-child
     text-align right
     color light-text-color
-    flex 1
+    padding-right 10px
   :last-child
-    flex 2
+    width 66%
+    padding-left 10px
 
 #container
   max-width 100ex
@@ -78,9 +85,7 @@ body>header
   margin 0 auto
 
   >header
-    display flex
-    justify-content space-between
-    align-items center
+    full-width-table auto
     margin 20px 0
     img.photo
       width 100px

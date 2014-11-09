@@ -11,35 +11,50 @@ field: Software developer, Javascript programmer, Web developer
 intro: |
   I'm a programmer and web developer specialized in JS who enjoys reading
   technical books, developing random playful side projects and learning and
-  exploring new technologies that interest me, ranging from front end
-  development and architecture, browser apis, visualizations and creative
-  coding, to backend coding and databases, and developer ops.
+  exploring new technologies.
 
-  I've recently given a workshop on Clojurescript for the FutureJS conference
+  I work for the Wikimedia Foundation on open source and open information for
+  everybody.
+
+  ###### excerpt
+
+  ### Side projects
+
+  I gave a workshop on Clojurescript for the FutureJS conference
   (April - May 2014), materials are online:
 
   * [FutureJS site](http://futurejs.org/workshops/diving-into-clojurescript)
   * [Slides](http://slides.com/joakino/diving-into-clojurescript/)
   * [GitHub repo - Exercises and explanations](https://github.com/joakin/diving-into-clojurescript-exercises/)
 
-  Things I've been interested and diving into in the last year include:
+  Things I've been playing and learning in the last year include:
 
   Clojure and Clojurescript, Functional programming, Node.js, React.js,
-  JavaScript (ES6), Promises (standalone and with generators), CSP (Generators
-  and channels, core.async), Coffeescript, several HTML5 APIs, Couchdb, Ansible
-  (system administration)
+  JavaScript (ES6), asynchronous programming paradigms (Promises, Generators,
+  CSP (channels, core.async), several HTML5 APIs, Leveldb, Couchdb, Ansible
+  (system administration).
 
-  For a sample of code, here are some of my last side projects I open sourced:
+  Here are some repos of side projects I've open sourced:
 
+  * [Connect 4 game](http://chimeces.com/connect4/) [Repo](https://github.com/joakin/connect4)
   * [ClojureScript snake game](https://github.com/joakin/cnake)
   * [Coffee node cli for organizing photos](https://github.com/joakin/galeria-cli)
 
 work:
+  - employer: Wikimedia Foundation
+    when: October 2014 - Now
+    position: Software engineer
+    what: |
+      #### Mobile web team
+      JavaScript and web programming for mobile Wikipedia.
+
   - employer: Freelance (Various)
     when: December 2013 - Now
     position: Freelance web developer, Javascript programmer, HTML & CSS programmer
     what: |
       Freelance contracting for different clients.
+
+      ###### excerpt
 
       * Data visualizations dashboard with d3
       * JS web applications
@@ -59,6 +74,8 @@ work:
       While freelance contracting for OHIM, I went mainly through two different
       big projects, OHIM eSearch (JS web application) and the new OHIM Website
       (public site and suite of web tools).
+
+      ###### excerpt
 
       ##### eSearch
 
@@ -99,6 +116,8 @@ work:
       Implement styles and layouts, themes and js plugins for client websites
       that used Drupal (mysql, php).
 
+      ###### excerpt
+
       * CSS
       * JS, jQuery, and jQuery plugins
       * Html and php templates
@@ -109,6 +128,8 @@ work:
     what: |
       Design and development of a browser application to create, layout and
       fill magazines, and generate a print version in PDF.
+
+      ###### excerpt
 
       * Web design and interaction
       * Frontend

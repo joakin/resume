@@ -9,7 +9,7 @@ birthDate: 17-12-85
 field: Software developer, Javascript programmer, Web developer
 
 intro: |
-  I'm a programmer and web developer specialized in JS who enjoys reading
+  I am a programmer and web developer specialized in JS who enjoys reading
   technical books, developing random playful side projects and learning and
   exploring new technologies.
 
@@ -27,14 +27,14 @@ intro: |
   * [Slides](http://slides.com/joakino/diving-into-clojurescript/)
   * [GitHub repo - Exercises and explanations](https://github.com/joakin/diving-into-clojurescript-exercises/)
 
-  Things I've been playing and learning in the last year include:
+  Things I have been playing and learning in the last year include:
 
   Clojure and Clojurescript, Functional programming, Node.js, React.js,
   JavaScript (ES6), asynchronous programming paradigms (Promises, Generators,
   CSP (channels, core.async), several HTML5 APIs, Leveldb, Couchdb, Ansible
   (system administration).
 
-  Here are some repos of side projects I've open sourced:
+  Here are some repos of side projects I have open sourced:
 
   * [Connect 4 game](http://chimeces.com/connect4/) [Repo](https://github.com/joakin/connect4)
   * [ClojureScript snake game](https://github.com/joakin/cnake)
@@ -49,7 +49,7 @@ work:
       JavaScript and web programming for mobile Wikipedia.
 
   - employer: Freelance (Various)
-    when: December 2013 - Now
+    when: December 2013 - September 2014
     position: Freelance web developer, Javascript programmer, HTML & CSS programmer
     what: |
       Freelance contracting for different clients.
@@ -144,7 +144,7 @@ work:
         * Firefox cli for rendering PDFs
 
       Support for the teaching staff of a masters course, development and
-      mantainance of the Master's website.
+      mantainance of the website.
 
   - employer: Diario Informacion / Newspaper
     when: 2006 - 2008
@@ -202,7 +202,7 @@ skills:
 other:
   car: Own vehicle
 
-  remote: Available to travel, can't relocate permanently right now
+  remote: Available to travel, cannot relocate permanently right now
 
   trips:
     - >

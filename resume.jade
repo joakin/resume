@@ -6,7 +6,7 @@ block content
     h1= fullName
     img.photo(src=photo)
 
-  section.personal-information
+  section.personal-information#personal-information
     header: h2 Personal information
     article
 
@@ -29,7 +29,7 @@ block content
         span= date
 
 
-  section.current-situation
+  section.current-situation#current-situation
     header: h2 Current situation
     article
       .kv
@@ -38,10 +38,10 @@ block content
 
     article!= md(intro)
 
-  section.work-experience
+  section.work-experience#work-experience
     header: h2 Work experience
     - work.forEach(function(job) {
-      article
+      article(id=job.employer+'-'+job.when+'-'+job.position)
         header
           .employer= job.employer
           .date= job.when
@@ -49,16 +49,16 @@ block content
         .activities!= md(job.what)
     - });
 
-  section.education
+  section.education#education
     header: h2 Education
     article
       .date= edu.when
       .title= edu.what
       .from= edu.who
 
-  section.skills
+  section.skills#skills
     header: h2 Skills
-    article.languages
+    article.languages#languages
       header: h3 Languages
       ul
         - skills.languages.forEach(function(lang) {
@@ -72,7 +72,7 @@ block content
                 - });
         - });
 
-    article.tech
+    article.tech#tech
       header: h3 Technical skills
       ul
         - skills.tech.forEach(function(skill) {
@@ -84,14 +84,14 @@ block content
                 - });
         - });
 
-    article.art
+    article.art#art
       header: h3 Artistic skills
       ul
         - skills.art.forEach(function(skill) {
           li.name= skill
         - })
 
-  section.other
+  section.other#other
     header: h2 Additional information
     article
       .car= other.car

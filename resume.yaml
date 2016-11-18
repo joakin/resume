@@ -20,39 +20,54 @@ intro: |
 
   ### Side projects
 
-  I gave a workshop on Clojurescript for the FutureJS conference
-  (April - May 2014), materials are online:
+  I gave a workshop on Clojurescript for the FutureJS conference 2 years in
+  a row.
 
-  * [FutureJS site](http://futurejs.org/workshops/diving-into-clojurescript)
+  Last year (2015) I adapted the workshop to use the bootstrapped JS compiler
+  on an online repl and crafted a notebook-style interactive workshop.
+
+  * [FutureJS site (see bottom)](http://2015.fullstackfest.com/)
+  * [Interactive browser based workshop](http://chimeces.com/cljs-browser-repl/#/notebook/diving-into-clojurescript/file/index)
+  * [Source](https://github.com/joakin/cljs-browser-repl)
+  
+  First year (2014), the slides and exercises are online.
+
+  * [FutureJS site](http://2014.futurejs.org/workshops/diving-into-clojurescript)
   * [Slides](http://slides.com/joakino/diving-into-clojurescript/)
   * [GitHub repo - Exercises and explanations](https://github.com/joakin/diving-into-clojurescript-exercises/)
 
-  Things I have been playing and learning in the last year include:
+  Things I have been playing with and learning about lately include:
 
-  Clojure and Clojurescript, Functional programming, Node.js, React.js,
-  JavaScript (ES6), asynchronous programming paradigms (Promises, Generators,
-  CSP (channels, core.async), several HTML5 APIs, Leveldb, Couchdb, Ansible
-  (system administration).
+  Creative coding, Service Workers, Elm, Clojure and Clojurescript, Functional
+  programming, Node.js, React.js, JavaScript (ES6), asynchronous programming
+  paradigms (Promises, Generators, CSP (channels, core.async), several HTML5
+  APIs, Leveldb, Couchdb, Ansible (system administration).
 
-  Here are some repos of side projects I have open sourced:
-
-  * [Connect 4 game](http://chimeces.com/connect4/) [Repo](https://github.com/joakin/connect4)
-  * [ClojureScript snake game](https://github.com/joakin/cnake)
-  * [Coffee node cli for organizing photos](https://github.com/joakin/galeria-cli)
+  Find me on github [@joakin](http://github.com/joakin) to see what side
+  projects I have been open sourcing lately.
 
 work:
   - employer: Wikimedia Foundation
     when: October 2014 - Now
     position: Software engineer
     what: |
-      #### Mobile web team
-      JavaScript and web programming for mobile Wikipedia.
+      Remote. Mobile web team and Reading web team.
+
+      JavaScript, CSS and Mediawiki php programming for the mobile Wikipedia
+      websites. Maintenance and development of several Mediawiki extensions,
+      mainly MobileFrontend, which powers the mobile websites.
+
+      Performance research and analysis, user design research and PWA
+      prototypes for offline mobile web wikipedia experiences.
+
+      Rotated through several roles on the team when needed (developer, tech
+      lead, product owner).
 
   - employer: Freelance (Various)
     when: December 2013 - September 2014
     position: Freelance web developer, Javascript programmer, HTML & CSS programmer
     what: |
-      Freelance contracting for different clients.
+      Remote. Freelance contracting for different clients.
 
       ###### excerpt
 
@@ -177,10 +192,9 @@ skills:
       children:
         - Html 5
         - Css 3
-        - JS (ES 3, 5, 6)
-        - CoffeeScript
-        - React.js
-        - Backbone.js
+        - JS (ES 3, 5, 2015)
+        - React.js, Redux
+        - Webpack, Browserify
     - text: Design and use of graphic design tools (Photoshop, Gimp, Pixelmator...)
     - text: Systems administration
       children:
@@ -188,11 +202,11 @@ skills:
         - Linux
     - text: Polyglot programmer
       children:
-        - Node.js
-        - Clojure(script)
+        - JS (Browser and Node.js)
+        - Clojurescript
+        - Elm
         - Python
-        - Haskell
-        - Several transpile-to-JS languages
+        - Php, Java, C, C++, etc.
 
   art:
     - Good taste developed for design and UX through years of self-taught skills.

@@ -5,30 +5,6 @@ text-color = #333
 light-text-color = #aaa
 light-bg = #ddd
 
-@font-face {
-    font-family: Latin Modern Roman;
-    src: url('fonts/lmroman10-regular-webfont.eot');
-    src: local('Latin Modern Roman'),
-         url('fonts/lmroman10-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/lmroman10-regular-webfont.woff') format('woff'),
-         url('fonts/lmroman10-regular-webfont.ttf') format('truetype'),
-         url('fonts/lmroman10-regular-webfont.svg#latin_modern_roman10_regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: Latin Modern Roman;
-    src: url('fonts/lmroman10-bold-webfont.eot');
-    src: local('Latin Modern Roman'),
-         url('fonts/lmroman10-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/lmroman10-bold-webfont.woff') format('woff'),
-         url('fonts/lmroman10-bold-webfont.ttf') format('truetype'),
-         url('fonts/lmroman10-bold-webfont.svg#latin_modern_roman10_bold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-}
-
-
 full-width-table(layout=auto)
   width 100%
   display table
@@ -56,20 +32,19 @@ ul
 
 body
   color text-color
-  font-family Latin Modern Roman, serif
+  font-family 'Source Sans Pro', sans-serif
 
 h1, h2, h3, h4, h5, h6
+  font-family 'Playfair Display', serif
   margin 0
 
 body>header
   background-color light-bg
   color white
   text-align center
-  h1
-    margin 0
   a
     display inline-block
-    padding 0 10px 10px
+    padding 10px 10px
 
   @media print
     display none

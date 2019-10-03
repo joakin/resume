@@ -2,106 +2,225 @@
 <html lang="en">
   <head>
     <title>CV Joaquin Oltra</title>
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" media="all" href="resume.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display|Libre+Franklin"
+      rel="stylesheet"
+    />
+    <link type="text/css" rel="stylesheet" media="all" href="normalize.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="resume.css" />
+    <script>
+      if (window.matchMedia) {
+        var printMediaQuery = window.matchMedia("print");
+        printMediaQuery.addListener(function(mql) {
+          if (mql.matches) {
+            beforePrint();
+          } else {
+            afterPrint();
+          }
+        });
+      } else {
+        // IE, Firefox
+        window.onbeforeprint = openDetails;
+        window.onafterprint = closeDetails;
+      }
+
+      function openDetails() {
+        Array.from(document.querySelectorAll("details")).forEach(e =>
+          e.toggleAttribute("open")
+        );
+      }
+      function closeDetails() {
+        Array.from(document.querySelectorAll("details")).forEach(e =>
+          e.removeAttribute("open")
+        );
+      }
+    </script>
   </head>
   <body>
-    <header><a href="http://chimeces.com/resume/">Web</a><a href="http://chimeces.com/resume/resume.pdf">PDF</a><a href="http://github.com/joakin/resume">Source</a></header>
+    <header>
+      <a href="http://chimeces.com/resume/">Web</a>
+      ·
+      <a href="http://chimeces.com/resume/resume.pdf">PDF</a>
+      ·
+      <a href="http://github.com/joakin/resume">Source</a>
+      ·
+      <span>
+        <a href="javascript:openDetails()">Open</a>
+        /
+        <a href="javascript:closeDetails()">Close</a>
+        details
+      </span>
+    </header>
     <div id="container">
       <header class="main">
-        <h1>Joaquin Oltra Hernandez</h1><img src="photo.jpg" class="photo">
+        <h1>Joaquín Oltra Hernández</h1>
+        <img src="photo.jpg" class="photo" />
       </header>
       <section id="personal-information" class="personal-information">
         <header>
           <h2>Personal information</h2>
         </header>
         <article>
-          <div class="kv full-name">
-            <label>Full name</label><span>Joaquin Oltra Hernandez</span>
-          </div>
           <div class="kv phone">
-            <label>Phone</label><span>(0034) 600078947</span>
+            <label>Phone</label>
+            <span>(0034) 600078947</span>
           </div>
           <div class="kv email">
-            <label>Email</label><span>joaquin@chimeces.com</span>
+            <label>Email</label>
+            <span>joaquin@chimeces.com</span>
           </div>
           <div class="kv nationality">
-            <label>Nationality</label><span>Spain</span>
+            <label>Nationality</label>
+            <span>Spain</span>
           </div>
           <div class="kv age">
-            <label>Age</label><span>31</span>
+            <label>Age</label>
+            <span>34</span>
           </div>
         </article>
       </section>
       <section id="current-situation" class="current-situation">
         <header>
-          <h2>Current situation</h2>
+          <h2>Summary</h2>
         </header>
         <article>
           <div class="kv">
-            <label>Field</label><span>Software developer, Javascript programmer, Web developer</span>
+            <label>Field</label>
+            <span>Software Engineering Manager, Senior Software Engineer</span>
           </div>
         </article>
-        <article><p>I am a programmer and web developer specialized in JS who enjoys reading
-technical books, developing random playful side projects and learning and
-exploring new technologies.</p>
-<p>I work for the Wikimedia Foundation on open source and open information for
-everybody.</p>
-<h6 id="excerpt">excerpt</h6>
-<h3 id="side-projects">Side projects</h3>
-<p>I gave a workshop on Clojurescript for the FutureJS conference 2 years in
-a row.</p>
-<p>Last year (2015) I adapted the workshop to use the bootstrapped JS compiler
-on an online repl and crafted a notebook-style interactive workshop.</p>
-<ul>
-<li><a href="http://2015.fullstackfest.com/">FutureJS site (see bottom)</a></li>
-<li><a href="http://chimeces.com/cljs-browser-repl/#/notebook/diving-into-clojurescript/file/index">Interactive browser based workshop</a></li>
-<li><a href="https://github.com/joakin/cljs-browser-repl">Source</a></li>
-</ul>
-<p>First year (2014), the slides and exercises are online.</p>
-<ul>
-<li><a href="http://2014.futurejs.org/workshops/diving-into-clojurescript">FutureJS site</a></li>
-<li><a href="http://slides.com/joakino/diving-into-clojurescript/">Slides</a></li>
-<li><a href="https://github.com/joakin/diving-into-clojurescript-exercises/">GitHub repo - Exercises and explanations</a></li>
-</ul>
-<p>Things I have been playing with and learning about lately include:</p>
-<p>Creative coding, Service Workers, Elm, Clojure and Clojurescript, Functional
-programming, Node.js, React.js, JavaScript (ES6), asynchronous programming
-paradigms (Promises, Generators, CSP (channels, core.async), several HTML5
-APIs, Leveldb, Couchdb, Ansible (system administration).</p>
-<p>Find me on github <a href="http://github.com/joakin">@joakin</a> to see what side
-projects I have been open sourcing lately.</p>
-</article>
+        <article>
+          <p>I am a Senior Software Engineer and Engineering Manager with more than 10
+years of industry experience in a wide variety of areas.</p>
+<p>I&#39;m a specialist in UI web development, and also have broad experience in the
+different skills involved in software engineering and delivering products,
+UIs, APIs and infrastructure, effectively and producing maintainable software.</p>
+<p>As a manager I strive for providing clear direction, trust and autonomy to my
+reports so that they can execute on the team and organization&#39;s objectives as
+effectively as possible, while developing professionally and advancing their
+careers.</p>
+<p>I enjoy computer generated art, compilers and programming languages, UI design
+and development, and exploring new technologies that grow the way we think
+about solving problems.</p>
+<p>I currently work for the Wikimedia Foundation on open source and open
+knowledge as an Engineering Manager for the Product Infrastructure team.</p>
+<p>I have been working remotely for the last 6 years.</p>
+
+        </article>
       </section>
       <section id="work-experience" class="work-experience">
         <header>
           <h2>Work experience</h2>
         </header>
-        <article id="Wikimedia Foundation-October 2014 - Now-Software engineer">
-          <header>
+
+        
+        <article
+          id="Wikimedia_Foundation-2018_-_Now-Software_Engineering_Manager"
+        >
+          <header class="header-3el">
             <div class="employer">Wikimedia Foundation</div>
-            <div class="date">October 2014 - Now</div>
+            <div class="position">Software Engineering Manager</div>
+            <div class="date">2018 - Now</div>
           </header>
-          <div class="position">Software engineer</div>
-          <div class="activities"><p>Remote. Mobile web team and Reading web team.</p>
-<p>JavaScript, CSS and Mediawiki php programming for the mobile Wikipedia
-websites. Maintenance and development of several Mediawiki extensions,
-mainly MobileFrontend, which powers the mobile websites.</p>
-<p>Performance research and analysis, user design research and PWA
-prototypes for offline mobile web wikipedia experiences.</p>
-<p>Rotated through several roles on the team when needed (developer, tech
-lead, product owner).</p>
-</div>
-        </article>
-        <article id="Freelance (Various)-December 2013 - September 2014-Freelance web developer, Javascript programmer, HTML &amp; CSS programmer">
-          <header>
-            <div class="employer">Freelance (Various)</div>
-            <div class="date">December 2013 - September 2014</div>
-          </header>
-          <div class="position">Freelance web developer, Javascript programmer, HTML &amp; CSS programmer</div>
-          <div class="activities"><p>Remote. Freelance contracting for different clients.</p>
-<h6 id="excerpt">excerpt</h6>
+          <div class="body">
+            <p>Remote. Managing 5 engineers in the Product Infrastructure team, where we:</p>
 <ul>
+<li>Built REST APIs to be consumed by the native apps teams and the web
+teams serving millions of hits per day</li>
+<li>Maintained a variety of backend components providing features such as
+reading lists, PDF rendering, and the Wikipedia Maps infrastructure</li>
+<li>Defined and resourced an effort to provide better data engineering tools
+and libraries for all product teams in the product department</li>
+</ul>
+ 
+            <details>
+              <summary>Details</summary>
+              <p>More information about the team can be found at the <a href="https://www.mediawiki.org/wiki/Wikimedia_Product/Wikimedia_Product_Infrastructure_team">Wikimedia Product
+Infrastructure</a>
+team page, including the team&#39;s mission and responsibilities, and a list
+of the main projects we were involved with.</p>
+
+            </details>
+            
+          </div>
+        </article>
+        
+        <article
+          id="Wikimedia_Foundation-2016_-_2018-Senior_Software_engineer"
+        >
+          <header class="header-3el">
+            <div class="employer">Wikimedia Foundation</div>
+            <div class="position">Senior Software engineer</div>
+            <div class="date">2016 - 2018</div>
+          </header>
+          <div class="body">
+            <p>Remote. Worked on the Mobile Web team doing JavaScript, CSS and MediaWiki
+PHP programming for the mobile Wikipedia websites which powers the user
+experience of over 65% of Wikipedia&#39;s traffic.</p>
+<p>Produced performance research and analysis of the content and website
+loading which informed several high impact projects over the following
+years.</p>
+<p>Worked on Page previews, providing hover cards for Desktop web improving
+the reading experience for all Wikipedia users.</p>
+<p>Led and planned technical improvement projects to reduce debt and
+modernize the codebase while working on Product&#39;s goals.</p>
+ 
+            <details>
+              <summary>Details</summary>
+              <p>More details on the team&#39;s responsibilities and goals in the
+<a href="https://www.mediawiki.org/wiki/Reading/Web">Reading/Web</a> page, and on
+team practices and processes on the
+<a href="https://www.mediawiki.org/wiki/Readers/Web/Team">Reading/Web/Team</a> page.</p>
+
+            </details>
+            
+          </div>
+        </article>
+        
+        <article
+          id="Wikimedia_Foundation-2014_-_2016-Software_engineer"
+        >
+          <header class="header-3el">
+            <div class="employer">Wikimedia Foundation</div>
+            <div class="position">Software engineer</div>
+            <div class="date">2014 - 2016</div>
+          </header>
+          <div class="body">
+            <p>Remote. Worked on the Mobile Web team doing JavaScript, CSS and Mediawiki
+PHP programming for the mobile Wikipedia websites which powers the user
+experience of over 65% of Wikipedia&#39;s traffic.</p>
+<p>Built several additional projects including a Survey feature for
+MediaWiki, public and private reading lists.</p>
+<p>Participated in a generative research project on emergent countries
+quickly building several prototypes to test ideas out with users, and
+participating in the interview process and information analysis.</p>
+ 
+            <details>
+              <summary>Details</summary>
+              <p>More details on the team&#39;s responsibilities and goals in the
+<a href="https://www.mediawiki.org/wiki/Reading/Web">Reading/Web</a> page, and on
+team practices and processes on the
+<a href="https://www.mediawiki.org/wiki/Readers/Web/Team">Reading/Web/Team</a> page.</p>
+
+            </details>
+            
+          </div>
+        </article>
+        
+        <article
+          id="Freelance-2013_-_2014-Software_engineer,_Web_development"
+        >
+          <header class="header-3el">
+            <div class="employer">Freelance</div>
+            <div class="position">Software engineer, Web development</div>
+            <div class="date">2013 - 2014</div>
+          </header>
+          <div class="body">
+            <p>Remote. Freelance contracting for different clients. JavaScript, HTML &amp; CSS, data visualizations dashboard with d3, web applications.</p>
+ 
+            <details>
+              <summary>Details</summary>
+              <ul>
 <li>Data visualizations dashboard with d3</li>
 <li>JS web applications<ul>
 <li>React.js for the view layer</li>
@@ -114,21 +233,28 @@ lead, product owner).</p>
 </li>
 </ul>
 </li>
-<li>New views on existing angular.js applications</li>
 </ul>
-</div>
+
+            </details>
+            
+          </div>
         </article>
-        <article id="OHIM-September 2010 - June 2013-Freelance web developer, Javascript programmer, Senior analyst programmer">
-          <header>
+        
+        <article
+          id="OHIM-2010_-_2013-Senior_software_engineer"
+        >
+          <header class="header-3el">
             <div class="employer">OHIM</div>
-            <div class="date">September 2010 - June 2013</div>
+            <div class="position">Senior software engineer</div>
+            <div class="date">2010 - 2013</div>
           </header>
-          <div class="position">Freelance web developer, Javascript programmer, Senior analyst programmer</div>
-          <div class="activities"><p>While freelance contracting for OHIM, I went mainly through two different
-big projects, OHIM eSearch (JS web application) and the new OHIM Website
-(public site and suite of web tools).</p>
-<h6 id="excerpt">excerpt</h6>
-<h5 id="esearch">eSearch</h5>
+          <div class="body">
+            <p>Built a frontend team and worked on OHIM eSearch (JS web application) and
+the new OHIM Website (public site and suite of web tools).</p>
+ 
+            <details>
+              <summary>Details</summary>
+              <h5 id="esearch">eSearch</h5>
 <p>Search engine for OHIM, I was involved in creating the single page
 application using Javascript, CSS3 with LESS, Backbone. This application
 got to about 25KLOC of code.</p>
@@ -158,34 +284,52 @@ to be used as a base in the site and tools.</p>
 <li>Web dev structure and process set up</li>
 <li>Help with Java w/ Spring development.</li>
 </ul>
-</div>
+
+            </details>
+            
+          </div>
         </article>
-        <article id="CESSER-2010-Web developer">
-          <header>
+        
+        <article
+          id="CESSER-2010-Software_engineer,_Web_development"
+        >
+          <header class="header-3el">
             <div class="employer">CESSER</div>
+            <div class="position">Software engineer, Web development</div>
             <div class="date">2010</div>
           </header>
-          <div class="position">Web developer</div>
-          <div class="activities"><p>Implement styles and layouts, themes and js plugins for client websites
+          <div class="body">
+            <p>Worked on styles, layouts, themes and JS plugins for client websites
 that used Drupal (mysql, php).</p>
-<h6 id="excerpt">excerpt</h6>
-<ul>
+ 
+            <details>
+              <summary>Details</summary>
+              <ul>
 <li>CSS</li>
 <li>JS, jQuery, and jQuery plugins</li>
-<li>Html and php templates</li>
+<li>Html and PHP templates</li>
 </ul>
-</div>
+
+            </details>
+            
+          </div>
         </article>
-        <article id="University of Alicante-2008 - 2010-Web developer, Javascript programmer">
-          <header>
+        
+        <article
+          id="University_of_Alicante-2008_-_2010-Software_engineer,_Web_development"
+        >
+          <header class="header-3el">
             <div class="employer">University of Alicante</div>
+            <div class="position">Software engineer, Web development</div>
             <div class="date">2008 - 2010</div>
           </header>
-          <div class="position">Web developer, Javascript programmer</div>
-          <div class="activities"><p>Design and development of a browser application to create, layout and
-fill magazines, and generate a print version in PDF.</p>
-<h6 id="excerpt">excerpt</h6>
-<ul>
+          <div class="body">
+            <p>Design and development of a browser application to create, layout and
+fill magazines, and generating a print version of them in PDF.</p>
+ 
+            <details>
+              <summary>Details</summary>
+              <ul>
 <li>Web design and interaction</li>
 <li>Frontend<ul>
 <li>JS, jQuery</li>
@@ -206,28 +350,155 @@ fill magazines, and generate a print version in PDF.</p>
 </ul>
 <p>Support for the teaching staff of a masters course, development and
 mantainance of the website.</p>
-</div>
+
+            </details>
+            
+          </div>
         </article>
-        <article id="Diario Informacion / Newspaper-2006 - 2008-Systems administrator">
-          <header>
+        
+        <article
+          id="Diario_Informacion_/_Newspaper-2006_-_2008-Systems_administrator"
+        >
+          <header class="header-3el">
             <div class="employer">Diario Informacion / Newspaper</div>
+            <div class="position">Systems administrator</div>
             <div class="date">2006 - 2008</div>
           </header>
-          <div class="position">Systems administrator</div>
-          <div class="activities"><p>Administrate Windows, Linux and OSx machines and servers, network
-infrastructure and customer support (editors and journalists).</p>
-</div>
+          <div class="body">
+            <p>Windows, Linux and OS X user machines and servers, network infrastructure
+and customer support (editors and journalists).</p>
+ 
+          </div>
         </article>
+        
       </section>
       <section id="education" class="education">
         <header>
           <h2>Education</h2>
         </header>
-        <article>
-          <div class="date">2004-2009</div>
-          <div class="title">Computer Science Engineer (Ingeniero en informatica)</div>
+        <article class="header-3el">
           <div class="from">University of Alicante</div>
+          <div class="title">Computer Science (Ingeniero en informatica)</div>
+          <div class="date">2004-2009</div>
         </article>
+      </section>
+      <section id="side-projects" class="side-projects">
+        <header>
+          <h2>Side projects</h2>
+        </header>
+        <p>
+          Here is a sample of some of the most recent or notable side projects
+          and open source efforts.
+        </p>
+        
+        <article
+          id="Web_library-https://github.com/joakin/context-cards-Context_Cards"
+        >
+          <header class="header-3el">
+            <div class="type">Web library</div>
+            <div class="name">Context Cards</div>
+            <div class="link"><a href="https://github.com/joakin/context-cards">🔗</a></div>
+          </header>
+          <div class="body">
+            <p>ContextCards are a way to embed content from Wikipedia Projects in third party websites. Written in Elm and distributed as a JS library.</p>
+ 
+            <details>
+              <summary>Details</summary>
+              <p>These page previews reduce the cost of exploration and make up for
+a better reading experience. You can see the <a href="https://chimeces.com/context-cards/">case
+studies</a> website for more information
+and demos.</p>
+<p>The source is available in
+<a href="https://github.com/joakin/context-cards">Github</a>, and the <a href="https://chimeces.com/context-cards/test.html">UI
+tests</a> are very interesting
+as well.</p>
+
+            </details>
+            
+          </div>
+        </article>
+        
+        <article
+          id="Elm_library-https://github.com/joakin/elm-canvas-elm-canvas"
+        >
+          <header class="header-3el">
+            <div class="type">Elm library</div>
+            <div class="name">elm-canvas</div>
+            <div class="link"><a href="https://github.com/joakin/elm-canvas">🔗</a></div>
+          </header>
+          <div class="body">
+            <p>Elm Canvas provides a 2d drawing API for the Elm ecosystem. It improves
+ease of use of the DOM Canvas APIs with the design, types and docs, and
+features a bunch of examples to learn from.</p>
+ 
+            <details>
+              <summary>Details</summary>
+              <p>You can see the <a href="https://chimeces.com/elm-canvas/">live examples</a> which
+cover various topics including generative art examples, a paint like
+mini-app, and some other features.</p>
+<p>The documentation is published on the elm package registry:
+  <a href="https://package.elm-lang.org/packages/joakin/elm-canvas/latest/">joakin/elm-canvas</a></p>
+
+            </details>
+            
+          </div>
+        </article>
+        
+        <article
+          id="CLI-https://github.com/joakin/markdown-folder-to-html-markdown-folder-to-html"
+        >
+          <header class="header-3el">
+            <div class="type">CLI</div>
+            <div class="name">markdown-folder-to-html</div>
+            <div class="link"><a href="https://github.com/joakin/markdown-folder-to-html">🔗</a></div>
+          </header>
+          <div class="body">
+            <p>Zero config command line tool to turn a folder of markdown and other
+static files into a publishable website. Written in TypeScript and published to npm.</p>
+ 
+            <details>
+              <summary>Details</summary>
+              <p>The <a href="http://chimeces.com/markdown-folder-to-html/">live example</a> shows the
+default template, which is very easy to override.</p>
+
+            </details>
+            
+          </div>
+        </article>
+        
+        <article
+          id="Workshop-http://chimeces.com/cljs-browser-repl/#/notebook/diving-into-clojurescript/file/index-Diving_into_ClojureScript"
+        >
+          <header class="header-3el">
+            <div class="type">Workshop</div>
+            <div class="name">Diving into ClojureScript</div>
+            <div class="link"><a href="http://chimeces.com/cljs-browser-repl/#/notebook/diving-into-clojurescript/file/index">🔗</a></div>
+          </header>
+          <div class="body">
+            <p>I taught a 4h workshop on ClojureScript at the FutureJS conference in
+2014 and 2015.</p>
+ 
+            <details>
+              <summary>Details</summary>
+              <p>In 2015 I adapted the workshop to use the bootstrapped JS compiler on an
+online repl and crafted a notebook-style interactive workshop.</p>
+<ul>
+<li><a href="http://2015.fullstackfest.com/">FutureJS site (see bottom)</a></li>
+<li><a href="http://chimeces.com/cljs-browser-repl/#/notebook/diving-into-clojurescript/file/index">Interactive browser based workshop</a></li>
+<li><a href="https://github.com/joakin/cljs-browser-repl">Source</a></li>
+</ul>
+<p>First year (2014), the slides and exercises are online.</p>
+<ul>
+<li><a href="http://2014.futurejs.org/workshops/diving-into-clojurescript">FutureJS site</a></li>
+<li><a href="http://slides.com/joakino/diving-into-clojurescript/">Slides</a></li>
+<li><a href="https://github.com/joakin/diving-into-clojurescript-exercises/">GitHub repo - Exercises and explanations</a></li>
+</ul>
+
+            </details>
+            
+          </div>
+        </article>
+        
       </section>
       <section id="skills" class="skills">
         <header>
@@ -237,59 +508,302 @@ infrastructure and customer support (editors and journalists).</p>
           <header>
             <h3>Languages</h3>
           </header>
-          <ul>
-            <li><span class="name">Spanish</span><span class="level">Mother tongue</span>
-            </li>
-            <li><span class="name">English</span><span class="level">Proficient (C1)</span>
-              <ul class="titles">
-                <li>CAE (Certificate in Advanced English)</li>
-                <li>FCE</li>
-              </ul>
-            </li>
-          </ul>
+          
+          <div class="header-3el">
+            <div class="name">Spanish</div>
+            <div class="level">Mother tongue</div>
+            
+          </div>
+          
+          <div class="header-3el">
+            <div class="name">English</div>
+            <div class="level">Proficient (C1)</div>
+            
+            <div>
+               CAE (Certificate in Advanced English)<br />
+               FCE<br />
+              
+            </div>
+            
+          </div>
+          
         </article>
         <article id="tech" class="tech">
           <header>
             <h3>Technical skills</h3>
           </header>
-          <ul>
-            <li class="name">VCS
-              <ul>
-                <li class="name">Git</li>
-                <li class="name">Svn</li>
-              </ul></li>
-            <li class="name">Frontend
-              <ul>
-                <li class="name">Html 5</li>
-                <li class="name">Css 3</li>
-                <li class="name">JS (ES 3, 5, 2015)</li>
-                <li class="name">React.js, Redux</li>
-                <li class="name">Webpack, Browserify</li>
-              </ul></li>
-            <li class="name">Design and use of graphic design tools (Photoshop, Gimp, Pixelmator...)</li>
-            <li class="name">Systems administration
-              <ul>
-                <li class="name">OS X</li>
-                <li class="name">Linux</li>
-              </ul></li>
-            <li class="name">Polyglot programmer
-              <ul>
-                <li class="name">JS (Browser and Node.js)</li>
-                <li class="name">Clojurescript</li>
-                <li class="name">Elm</li>
-                <li class="name">Python</li>
-                <li class="name">Php, Java, C, C++, etc.</li>
-              </ul></li>
-          </ul>
+          <div class="table">
+            <div class="table-headers">
+              <div></div>
+              <div><span>Aware</span><span>basic knowledge</span></div>
+              <div><span>Novice</span><span>limited experience</span></div>
+              <div>
+                <span>Intermediate</span><span>practical application</span>
+              </div>
+              <div><span>Advanced</span><span>applied theory</span></div>
+              <div><span>Expert</span><span>recognized authority</span></div>
+            </div>
+            
+            <h4></h4>
+             
+            <div class="tech-row">
+              <div class="name">Learning</div>
+              <div class="level">
+                <div
+                  class="level-line"
+                  style="--level: 5"
+                ></div>
+              </div>
+            </div>
+              
+            <h4>VCS</h4>
+             
+            <div class="tech-row">
+              <div class="name">Git</div>
+              <div class="level">
+                <div
+                  class="level-line"
+                  style="--level: 4"
+                ></div>
+              </div>
+            </div>
+              
+            <h4>Frontend</h4>
+             
+            <div class="tech-row">
+              <div class="name">Html</div>
+              <div class="level">
+                <div
+                  class="level-line"
+                  style="--level: 5"
+                ></div>
+              </div>
+            </div>
+            
+            <div class="tech-row">
+              <div class="name">Css</div>
+              <div class="level">
+                <div
+                  class="level-line"
+                  style="--level: 5"
+                ></div>
+              </div>
+            </div>
+            
+            <div class="tech-row">
+              <div class="name">JS</div>
+              <div class="level">
+                <div
+                  class="level-line"
+                  style="--level: 5"
+                ></div>
+              </div>
+            </div>
+            
+            <div class="tech-row">
+              <div class="name">Typescript</div>
+              <div class="level">
+                <div
+                  class="level-line"
+                  style="--level: 4"
+                ></div>
+              </div>
+            </div>
+            
+            <div class="tech-row">
+              <div class="name">React</div>
+              <div class="level">
+                <div
+                  class="level-line"
+                  style="--level: 4"
+                ></div>
+              </div>
+            </div>
+            
+            <div class="tech-row">
+              <div class="name">Elm</div>
+              <div class="level">
+                <div
+                  class="level-line"
+                  style="--level: 4"
+                ></div>
+              </div>
+            </div>
+              
+            <h4>UX</h4>
+             
+            <div class="tech-row">
+              <div class="name">Graphic Design</div>
+              <div class="level">
+                <div
+                  class="level-line"
+                  style="--level: 3"
+                ></div>
+              </div>
+            </div>
+            
+            <div class="tech-row">
+              <div class="name">Mockups</div>
+              <div class="level">
+                <div
+                  class="level-line"
+                  style="--level: 4"
+                ></div>
+              </div>
+            </div>
+            
+            <div class="tech-row">
+              <div class="name">Prototyping</div>
+              <div class="level">
+                <div
+                  class="level-line"
+                  style="--level: 5"
+                ></div>
+              </div>
+            </div>
+            
+            <div class="tech-row">
+              <div class="name">Animation</div>
+              <div class="level">
+                <div
+                  class="level-line"
+                  style="--level: 3"
+                ></div>
+              </div>
+            </div>
+              
+            <h4>Backend</h4>
+             
+            <div class="tech-row">
+              <div class="name">Node.js</div>
+              <div class="level">
+                <div
+                  class="level-line"
+                  style="--level: 4"
+                ></div>
+              </div>
+            </div>
+            
+            <div class="tech-row">
+              <div class="name">Clojure</div>
+              <div class="level">
+                <div
+                  class="level-line"
+                  style="--level: 3"
+                ></div>
+              </div>
+            </div>
+              
+            <h4>Systems administration</h4>
+             
+            <div class="tech-row">
+              <div class="name">OS X</div>
+              <div class="level">
+                <div
+                  class="level-line"
+                  style="--level: 4"
+                ></div>
+              </div>
+            </div>
+            
+            <div class="tech-row">
+              <div class="name">Linux</div>
+              <div class="level">
+                <div
+                  class="level-line"
+                  style="--level: 4"
+                ></div>
+              </div>
+            </div>
+              
+            <h4>Programming languages</h4>
+             
+            <div class="tech-row">
+              <div class="name">JS</div>
+              <div class="level">
+                <div
+                  class="level-line"
+                  style="--level: 5"
+                ></div>
+              </div>
+            </div>
+            
+            <div class="tech-row">
+              <div class="name">ClojureScript</div>
+              <div class="level">
+                <div
+                  class="level-line"
+                  style="--level: 4"
+                ></div>
+              </div>
+            </div>
+            
+            <div class="tech-row">
+              <div class="name">Elm</div>
+              <div class="level">
+                <div
+                  class="level-line"
+                  style="--level: 4"
+                ></div>
+              </div>
+            </div>
+            
+            <div class="tech-row">
+              <div class="name">Python</div>
+              <div class="level">
+                <div
+                  class="level-line"
+                  style="--level: 3"
+                ></div>
+              </div>
+            </div>
+            
+            <div class="tech-row">
+              <div class="name">C</div>
+              <div class="level">
+                <div
+                  class="level-line"
+                  style="--level: 2"
+                ></div>
+              </div>
+            </div>
+            
+            <div class="tech-row">
+              <div class="name">Java</div>
+              <div class="level">
+                <div
+                  class="level-line"
+                  style="--level: 3"
+                ></div>
+              </div>
+            </div>
+            
+            <div class="tech-row">
+              <div class="name">(ba)sh</div>
+              <div class="level">
+                <div
+                  class="level-line"
+                  style="--level: 3"
+                ></div>
+              </div>
+            </div>
+              
+          </div>
         </article>
         <article id="art" class="art">
           <header>
             <h3>Artistic skills</h3>
           </header>
           <ul>
-            <li class="name">Good taste developed for design and UX through years of self-taught skills.</li>
+            
+            <li class="name">Good taste developed for design and UX through years of self-taught skills</li>
+            
             <li class="name">Photography and photo retouching</li>
+            
             <li class="name">Web design, and medium level graphic design skills</li>
+            
+            <li class="name">Computer generated art hobbyist</li>
+            
           </ul>
         </article>
       </section>
@@ -298,33 +812,21 @@ infrastructure and customer support (editors and journalists).</p>
           <h2>Additional information</h2>
         </header>
         <article>
-          <div class="car">Own vehicle</div>
-          <div class="remote">Available to travel, cannot relocate permanently right now</div>
-          <ul class="trips">
-            <li>07/2013 - 12/2013: South America (Peru, Bolivia, Chile, Argentina)
-</li>
-            <li>05/2013 - 05/2013: USA (Chicago - New York)
-</li>
-            <li>02/2012 - 04/2012: North India
-</li>
-            <li>09/2008 - 03/2009: Aachen (Germany): Erasmus Trainee
-</li>
-            <li>07/2003 - 09/2003: Oxford (England) in language school
-</li>
-            <li>07/2001 - 09/2001: Brighton (England) in language school
-</li>
-          </ul>
+          <p class="car">Own vehicle.</p>
+          <p class="remote">Available to travel, cannot relocate permanently right now.</p>
         </article>
       </section>
     </div>
     <footer>
-      <p><p>This resume was generated from YAML, JADE, HTML and CSS using Node.js
-and is open source.</p>
-<p>To learn more visit the online version at
-<a href="http://chimeces.com/resume/">chimeces.com/resume</a> or check the
-underlying source at the <a href="http://github.com/joakin/resume">GitHub
-repo</a>.</p>
-
+      <p>
+        This resume was generated from YAML, HTML, JS and CSS using Node.js and
+        is open source.
+      </p>
+      <p>
+        To learn more visit the online version at
+        <a href="http://chimeces.com/resume/">chimeces.com/resume</a> or check
+        the underlying source at the
+        <a href="http://github.com/joakin/resume">GitHub repo</a>.
       </p>
     </footer>
   </body>

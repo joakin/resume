@@ -1,76 +1,103 @@
-
-fullName: Joaquin Oltra Hernandez
+fullName: Joaquín Oltra Hernández
 photo: photo.jpg
 phone: (0034) 600078947
 email: joaquin@chimeces.com
 nationality: Spain
 birthDate: 17-12-85
 
-field: Software developer, Javascript programmer, Web developer
+field: Software Engineering Manager, Senior Software Engineer
 
 intro: |
-  I am a programmer and web developer specialized in JS who enjoys reading
-  technical books, developing random playful side projects and learning and
-  exploring new technologies.
+  I am a Senior Software Engineer and Engineering Manager with more than 10
+  years of industry experience in a wide variety of areas.
 
-  I work for the Wikimedia Foundation on open source and open information for
-  everybody.
+  I'm a specialist in UI web development, and also have broad experience in the
+  different skills involved in software engineering and delivering products,
+  UIs, APIs and infrastructure, effectively and producing maintainable software.
 
-  ###### excerpt
+  As a manager I strive for providing clear direction, trust and autonomy to my
+  reports so that they can execute on the team and organization's objectives as
+  effectively as possible, while developing professionally and advancing their
+  careers.
 
-  ### Side projects
+  I enjoy computer generated art, compilers and programming languages, UI design
+  and development, and exploring new technologies that grow the way we think
+  about solving problems.
 
-  I gave a workshop on Clojurescript for the FutureJS conference 2 years in
-  a row.
-
-  Last year (2015) I adapted the workshop to use the bootstrapped JS compiler
-  on an online repl and crafted a notebook-style interactive workshop.
-
-  * [FutureJS site (see bottom)](http://2015.fullstackfest.com/)
-  * [Interactive browser based workshop](http://chimeces.com/cljs-browser-repl/#/notebook/diving-into-clojurescript/file/index)
-  * [Source](https://github.com/joakin/cljs-browser-repl)
+  I currently work for the Wikimedia Foundation on open source and open
+  knowledge as an Engineering Manager for the Product Infrastructure team.
   
-  First year (2014), the slides and exercises are online.
+  I have been working remotely for the last 6 years.
 
-  * [FutureJS site](http://2014.futurejs.org/workshops/diving-into-clojurescript)
-  * [Slides](http://slides.com/joakino/diving-into-clojurescript/)
-  * [GitHub repo - Exercises and explanations](https://github.com/joakin/diving-into-clojurescript-exercises/)
-
-  Things I have been playing with and learning about lately include:
-
-  Creative coding, Service Workers, Elm, Clojure and Clojurescript, Functional
-  programming, Node.js, React.js, JavaScript (ES6), asynchronous programming
-  paradigms (Promises, Generators, CSP (channels, core.async), several HTML5
-  APIs, Leveldb, Couchdb, Ansible (system administration).
-
-  Find me on github [@joakin](http://github.com/joakin) to see what side
-  projects I have been open sourcing lately.
 
 work:
   - employer: Wikimedia Foundation
-    when: October 2014 - Now
+    when: 2018 - Now
+    position: Software Engineering Manager
+    what: |
+      Remote. Managing 5 engineers in the Product Infrastructure team, where we:
+
+      * Built REST APIs to be consumed by the native apps teams and the web
+        teams serving millions of hits per day
+      * Maintained a variety of backend components providing features such as
+        reading lists, PDF rendering, and the Wikipedia Maps infrastructure
+      * Defined and resourced an effort to provide better data engineering tools
+        and libraries for all product teams in the product department
+    details: |
+      More information about the team can be found at the [Wikimedia Product
+      Infrastructure](https://www.mediawiki.org/wiki/Wikimedia_Product/Wikimedia_Product_Infrastructure_team)
+      team page, including the team's mission and responsibilities, and a list
+      of the main projects we were involved with.
+
+  - employer: Wikimedia Foundation
+    when: 2016 - 2018
+    position: Senior Software engineer
+    what: |
+      Remote. Worked on the Mobile Web team doing JavaScript, CSS and MediaWiki
+      PHP programming for the mobile Wikipedia websites which powers the user
+      experience of over 65% of Wikipedia's traffic.
+
+      Produced performance research and analysis of the content and website
+      loading which informed several high impact projects over the following
+      years.
+
+      Worked on Page previews, providing hover cards for Desktop web improving
+      the reading experience for all Wikipedia users.
+
+      Led and planned technical improvement projects to reduce debt and
+      modernize the codebase while working on Product's goals.
+    details: |
+      More details on the team's responsibilities and goals in the
+      [Reading/Web](https://www.mediawiki.org/wiki/Reading/Web) page, and on
+      team practices and processes on the
+      [Reading/Web/Team](https://www.mediawiki.org/wiki/Readers/Web/Team) page.
+
+  - employer: Wikimedia Foundation
+    when: 2014 - 2016
     position: Software engineer
     what: |
-      Remote. Mobile web team and Reading web team.
+      Remote. Worked on the Mobile Web team doing JavaScript, CSS and Mediawiki
+      PHP programming for the mobile Wikipedia websites which powers the user
+      experience of over 65% of Wikipedia's traffic.
 
-      JavaScript, CSS and Mediawiki php programming for the mobile Wikipedia
-      websites. Maintenance and development of several Mediawiki extensions,
-      mainly MobileFrontend, which powers the mobile websites.
+      Built several additional projects including a Survey feature for
+      MediaWiki, public and private reading lists.
 
-      Performance research and analysis, user design research and PWA
-      prototypes for offline mobile web wikipedia experiences.
+      Participated in a generative research project on emergent countries
+      quickly building several prototypes to test ideas out with users, and
+      participating in the interview process and information analysis.
+    details: |
+      More details on the team's responsibilities and goals in the
+      [Reading/Web](https://www.mediawiki.org/wiki/Reading/Web) page, and on
+      team practices and processes on the
+      [Reading/Web/Team](https://www.mediawiki.org/wiki/Readers/Web/Team) page.
 
-      Rotated through several roles on the team when needed (developer, tech
-      lead, product owner).
-
-  - employer: Freelance (Various)
-    when: December 2013 - September 2014
-    position: Freelance web developer, Javascript programmer, HTML & CSS programmer
+  - employer: Freelance
+    when: 2013 - 2014
+    position: Software engineer, Web development
     what: |
-      Remote. Freelance contracting for different clients.
-
-      ###### excerpt
-
+      Remote. Freelance contracting for different clients. JavaScript, HTML & CSS, data visualizations dashboard with d3, web applications.
+    details: |
       * Data visualizations dashboard with d3
       * JS web applications
         * React.js for the view layer
@@ -79,19 +106,15 @@ work:
         * JS web application architecture & structure
         * node.js backend APIs
           * Promises A+ for async (via bluebird.js)
-      * New views on existing angular.js applications
 
 
   - employer: OHIM
-    when: September 2010 - June 2013
-    position: Freelance web developer, Javascript programmer, Senior analyst programmer
+    when: 2010 - 2013
+    position: Senior software engineer
     what: |
-      While freelance contracting for OHIM, I went mainly through two different
-      big projects, OHIM eSearch (JS web application) and the new OHIM Website
-      (public site and suite of web tools).
-
-      ###### excerpt
-
+      Built a frontend team and worked on OHIM eSearch (JS web application) and
+      the new OHIM Website (public site and suite of web tools).
+    details: |
       ##### eSearch
 
       Search engine for OHIM, I was involved in creating the single page
@@ -126,26 +149,22 @@ work:
 
   - employer: CESSER
     when: 2010
-    position: Web developer
+    position: Software engineer, Web development
     what: |
-      Implement styles and layouts, themes and js plugins for client websites
+      Worked on styles, layouts, themes and JS plugins for client websites
       that used Drupal (mysql, php).
-
-      ###### excerpt
-
+    details: |
       * CSS
       * JS, jQuery, and jQuery plugins
-      * Html and php templates
+      * Html and PHP templates
 
   - employer: University of Alicante
     when: 2008 - 2010
-    position: Web developer, Javascript programmer
+    position: Software engineer, Web development
     what: |
       Design and development of a browser application to create, layout and
-      fill magazines, and generate a print version in PDF.
-
-      ###### excerpt
-
+      fill magazines, and generating a print version of them in PDF.
+    details: |
       * Web design and interaction
       * Frontend
         * JS, jQuery
@@ -165,12 +184,71 @@ work:
     when: 2006 - 2008
     position: Systems administrator
     what: |
-      Administrate Windows, Linux and OSx machines and servers, network
-      infrastructure and customer support (editors and journalists).
+      Windows, Linux and OS X user machines and servers, network infrastructure
+      and customer support (editors and journalists).
+
+sideprojects:
+  - type: Web library
+    name: Context Cards
+    link: https://github.com/joakin/context-cards
+    what: |
+      ContextCards are a way to embed content from Wikipedia Projects in third party websites. Written in Elm and distributed as a JS library.
+    details: |
+      These page previews reduce the cost of exploration and make up for
+      a better reading experience. You can see the [case
+      studies](https://chimeces.com/context-cards/) website for more information
+      and demos.
+
+      The source is available in
+      [Github](https://github.com/joakin/context-cards), and the [UI
+      tests](https://chimeces.com/context-cards/test.html) are very interesting
+      as well.
+  - type: Elm library
+    name: elm-canvas
+    link: https://github.com/joakin/elm-canvas
+    what: |
+      Elm Canvas provides a 2d drawing API for the Elm ecosystem. It improves
+      ease of use of the DOM Canvas APIs with the design, types and docs, and
+      features a bunch of examples to learn from.
+    details: |
+      You can see the [live examples](https://chimeces.com/elm-canvas/) which
+      cover various topics including generative art examples, a paint like
+      mini-app, and some other features.
+
+      The documentation is published on the elm package registry:
+        [joakin/elm-canvas](https://package.elm-lang.org/packages/joakin/elm-canvas/latest/)
+  - type: CLI
+    name: markdown-folder-to-html
+    link: https://github.com/joakin/markdown-folder-to-html
+    what: |
+      Zero config command line tool to turn a folder of markdown and other
+      static files into a publishable website. Written in TypeScript and published to npm.
+    details: |
+      The [live example](http://chimeces.com/markdown-folder-to-html/) shows the
+      default template, which is very easy to override.
+  - type: Workshop
+    name: Diving into ClojureScript
+    link: "http://chimeces.com/cljs-browser-repl/#/notebook/diving-into-clojurescript/file/index"
+    what: |
+      I taught a 4h workshop on ClojureScript at the FutureJS conference in
+      2014 and 2015.
+    details: |
+      In 2015 I adapted the workshop to use the bootstrapped JS compiler on an
+      online repl and crafted a notebook-style interactive workshop.
+
+      * [FutureJS site (see bottom)](http://2015.fullstackfest.com/)
+      * [Interactive browser based workshop](http://chimeces.com/cljs-browser-repl/#/notebook/diving-into-clojurescript/file/index)
+      * [Source](https://github.com/joakin/cljs-browser-repl)
+      
+      First year (2014), the slides and exercises are online.
+
+      * [FutureJS site](http://2014.futurejs.org/workshops/diving-into-clojurescript)
+      * [Slides](http://slides.com/joakino/diving-into-clojurescript/)
+      * [GitHub repo - Exercises and explanations](https://github.com/joakin/diving-into-clojurescript-exercises/)
 
 edu:
   when: 2004-2009
-  what: Computer Science Engineer (Ingeniero en informatica)
+  what: Computer Science (Ingeniero en informatica)
   who: University of Alicante
 
 skills:
@@ -184,51 +262,86 @@ skills:
         - FCE
 
   tech:
+    # - text: Test
+    #   children:
+    #     - name: 1
+    #       level: 1
+    #     - name: 2
+    #       level: 2
+    #     - name: 3
+    #       level: 3
+    #     - name: 4
+    #       level: 4
+    #     - name: 5
+    #       level: 5
+    - children:
+        - name: Learning
+          level: 5
     - text: VCS
       children:
-        - Git
-        - Svn
+        - name: Git
+          level: 4
     - text: Frontend
       children:
-        - Html 5
-        - Css 3
-        - JS (ES 3, 5, 2015)
-        - React.js, Redux
-        - Webpack, Browserify
-    - text: Design and use of graphic design tools (Photoshop, Gimp, Pixelmator...)
+        - name: Html
+          level: 5
+        - name: Css
+          level: 5
+        - name: JS
+          level: 5
+        - name: Typescript
+          level: 4
+        - name: React
+          level: 4
+        - name: Elm
+          level: 4
+    - text: UX
+      children:
+        - name: Graphic Design
+          level: 3
+        - name: Mockups
+          level: 4
+        - name: Prototyping
+          level: 5
+        - name: Animation
+          level: 3
+    - text: Backend
+      children:
+        - name: Node.js
+          level: 4
+        - name: Clojure
+          level: 3
     - text: Systems administration
       children:
-        - OS X
-        - Linux
-    - text: Polyglot programmer
+        - name: OS X
+          level: 4
+        - name: Linux
+          level: 4
+    - text: Programming languages
       children:
-        - JS (Browser and Node.js)
-        - Clojurescript
-        - Elm
-        - Python
-        - Php, Java, C, C++, etc.
+        - name: JS
+          level: 5
+        - name: ClojureScript
+          level: 4
+        - name: Elm
+          level: 4
+        - name: Python
+          level: 3
+        - name: C
+          level: 2
+        - name: Java
+          level: 3
+        - name: (ba)sh
+          level: 3
 
   art:
-    - Good taste developed for design and UX through years of self-taught skills.
+    - Good taste developed for design and UX through years of self-taught skills
     - Photography and photo retouching
     - Web design, and medium level graphic design skills
+    - Computer generated art hobbyist
 
 other:
-  car: Own vehicle
+  car: Own vehicle.
 
-  remote: Available to travel, cannot relocate permanently right now
-
-  trips:
-    - >
-      07/2013 - 12/2013: South America (Peru, Bolivia, Chile, Argentina)
-    - >
-      05/2013 - 05/2013: USA (Chicago - New York)
-    - >
-      02/2012 - 04/2012: North India
-    - >
-      09/2008 - 03/2009: Aachen (Germany): Erasmus Trainee
-    - >
-      07/2003 - 09/2003: Oxford (England) in language school
-    - >
-      07/2001 - 09/2001: Brighton (England) in language school
+  remote: Available to travel, cannot relocate permanently right now.
 

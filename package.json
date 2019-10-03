@@ -6,27 +6,15 @@
   "author": "Joaquin Oltra",
   "license": "GPLv3",
   "devDependencies": {
-    "jade": "^1.4.2",
+    "ejs": "^2.7.1",
     "js-yaml": "^3.1.0",
-    "livereloadx": "^0.3.5",
-    "lodash.assign": "^2.4.1",
-    "marked": "^0.3.2",
-    "nib": "^1.0.3",
-    "nodepdf": "^1.0.1",
-    "stylus": "^0.47.1",
-    "stylus-normalize": "^3.0.0",
-    "watch-run": "^1.0.0"
+    "marked": "^0.7.0",
+    "puppeteer": "^1.20.0"
   },
   "scripts": {
-    "serve": "./node_modules/.bin/livereloadx -s ./static/",
-    "watch-stylus": "./node_modules/.bin/stylus -w resume.styl --out static -I ./node_modules",
-    "build-stylus": "./node_modules/.bin/stylus resume.styl --out static -I ./node_modules",
-    "watch-html": "./node_modules/.bin/watch-run -p \"*.+(jade|yaml)\" ./bin/build-html.js",
     "build-html": "./bin/build-html.js",
-    "watch-pdf": "./node_modules/.bin/watch-run -p \"static/*.!(pdf|json)\" ./bin/build-pdf.js",
     "build-pdf": "./bin/build-pdf.js",
-    "watch": "npm run watch-html & npm run watch-pdf & npm run watch-stylus & npm run serve",
-    "build": "npm run build-html & npm run build-stylus & npm run build-pdf",
+    "build": "npm run build-html && npm run build-pdf",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }

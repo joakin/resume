@@ -1,37 +1,29 @@
 #!/usr/bin/env node
 
-var NodePDF = require('nodepdf');
+const path = require("path");
+const puppeteer = require("puppeteer");
 
-var options = {
-  viewportSize: {
-    width: 1440,
-    height: 900
-  },
-  paperSize: {
-    pageFormat: 'A4',
+const input = "./static/index.html";
+const output = "./static/resume.pdf";
+
+(async () => {
+  const browser = await puppeteer.launch();
+  const page = await browser.newPage();
+  await page.goto(`file://${path.resolve(input)}`, {
+    waitUntil: "networkidle0"
+  });
+  await page.pdf({
+    path: output,
+    format: "A4",
+    scale: 0.75,
+    printBackground: true,
     margin: {
-      top: '0.7cm',
-      left: '0.7cm',
-      right: '0.7cm',
-      bottom: '0.7cm'
-    },
-    footer: {
-      height: '1cm',
-      contents: '{currentPage} / {pages}'
+      top: "1cm",
+      left: "1cm",
+      right: "1cm",
+      bottom: "1cm"
     }
-  },
-  zoomFactor: 0.75
-};
+  });
 
-var pdf = new NodePDF('./static/index.html', './static/resume.pdf', options);
-
-pdf.on('error', console.error);
-
-pdf.on('done', console.log.bind(console, 'PDF file written at'));
-
-pdf.on('stdout', console.log.bind(console, 'PhantomJS: '));
-
-// listen for stderr from phantomjs
-pdf.on('stderr', console.error.bind(console, 'PhantomJS: '));
-
-
+  await browser.close();
+})();

@@ -1,27 +1,22 @@
 #!/usr/bin/env node
 
-var fs = require('fs');
-var jade = require('jade');
-var yaml = require('js-yaml');
-var md = require('marked');
+const fs = require("fs");
+const yaml = require("js-yaml");
+const ejs = require("ejs");
+const md = require("marked");
 
-var extend = require('lodash.assign');
+const root = __dirname + "/../";
+const htmlPath = "static/index.html";
 
-var root = __dirname + '/../';
-var htmlPath = 'static/index.html';
-var data = yaml.safeLoad(fs.readFileSync(root + 'resume.yaml', 'utf8'));
-var templateContents = fs.readFileSync(root + 'resume.jade', 'utf8');
+const data = yaml.safeLoad(fs.readFileSync(root + "resume.yaml", "utf8"));
 
-var template = jade.compile(templateContents, {
-  filename: './',
-  pretty: true,
-  compileDebug: true
-});
+fs.writeFileSync(
+  root + htmlPath,
+  ejs.render(
+    fs.readFileSync(root + "resume.html", "utf8"),
+    Object.assign({ md }, data),
+    {}
+  )
+);
 
-var locals = extend(data, {
-  md: md
-});
-fs.writeFileSync(root + htmlPath, template(locals));
-
-console.log('Written ' + htmlPath);
-
+console.log("Written " + htmlPath);

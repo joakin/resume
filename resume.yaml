@@ -4,35 +4,22 @@ phone: (0034) 600078947
 email: joaquin@chimeces.com
 nationality: Spain
 birthDate: 17-12-85
-
-field: Software Engineering Manager, Senior Software Engineer
+github: joakin
 
 intro: |
-  I am a Senior Software Engineer and Engineering Manager with more than 10
-  years of industry experience in a wide variety of areas.
-
-  I'm a specialist in UI web development, and also have broad experience in the
-  different skills involved in software engineering and delivering products,
-  UIs, APIs and infrastructure, effectively and producing maintainable software.
+  I am a **Senior Software Engineer** and **Engineering Manager** with more than
+  10 years of industry experience. I am a specialist in *UI web development*,
+  and have broad experience in the different skills involved in software
+  engineering and delivering products, effectively and producing maintainable
+  software.
 
   As a manager I strive for providing clear direction, trust and autonomy to my
-  reports so that they can execute on the team and organization's objectives as
-  effectively as possible, while developing professionally and advancing their
-  careers.
-
-  I enjoy computer generated art, compilers and programming languages, UI design
-  and development, and exploring new technologies that grow the way we think
-  about solving problems.
-
-  I currently work for the Wikimedia Foundation on open source and open
-  knowledge as an Engineering Manager for the Product Infrastructure team.
-  
-  I have been working remotely for the last 6 years.
-
+  reports so that they can execute on the team and organization's objectives
+  effectively, while developing professionally and advancing their careers.
 
 work:
   - employer: Wikimedia Foundation
-    when: 2018 - Now
+    start: 2018
     position: Software Engineering Manager
     what: |
       Remote. Managing 5 engineers in the Product Infrastructure team, where we:
@@ -50,7 +37,8 @@ work:
       of the main projects we were involved with.
 
   - employer: Wikimedia Foundation
-    when: 2016 - 2018
+    start: 2016
+    end: 2018
     position: Senior Software engineer
     what: |
       Remote. Worked on the Mobile Web team doing JavaScript, CSS and MediaWiki
@@ -73,7 +61,8 @@ work:
       [Reading/Web/Team](https://www.mediawiki.org/wiki/Readers/Web/Team) page.
 
   - employer: Wikimedia Foundation
-    when: 2014 - 2016
+    start: 2014
+    end: 2016
     position: Software engineer
     what: |
       Remote. Worked on the Mobile Web team doing JavaScript, CSS and Mediawiki
@@ -93,7 +82,8 @@ work:
       [Reading/Web/Team](https://www.mediawiki.org/wiki/Readers/Web/Team) page.
 
   - employer: Freelance
-    when: 2013 - 2014
+    start: 2013
+    end: 2014
     position: Software engineer, Web development
     what: |
       Remote. Freelance contracting for different clients. JavaScript, HTML & CSS, data visualizations dashboard with d3, web applications.
@@ -107,9 +97,9 @@ work:
         * node.js backend APIs
           * Promises A+ for async (via bluebird.js)
 
-
   - employer: OHIM
-    when: 2010 - 2013
+    start: 2010
+    end: 2013
     position: Senior software engineer
     what: |
       Built a frontend team and worked on OHIM eSearch (JS web application) and
@@ -148,7 +138,8 @@ work:
       * Help with Java w/ Spring development.
 
   - employer: CESSER
-    when: 2010
+    start: 2010
+    end: 2010
     position: Software engineer, Web development
     what: |
       Worked on styles, layouts, themes and JS plugins for client websites
@@ -159,7 +150,8 @@ work:
       * Html and PHP templates
 
   - employer: University of Alicante
-    when: 2008 - 2010
+    start: 2008
+    end: 2010
     position: Software engineer, Web development
     what: |
       Design and development of a browser application to create, layout and
@@ -181,167 +173,35 @@ work:
       mantainance of the website.
 
   - employer: Diario Informacion / Newspaper
-    when: 2006 - 2008
+    start: 2006
+    end: 2008
     position: Systems administrator
     what: |
       Windows, Linux and OS X user machines and servers, network infrastructure
       and customer support (editors and journalists).
 
-sideprojects:
-  - type: Web library
-    name: Context Cards
-    link: https://github.com/joakin/context-cards
-    what: |
-      ContextCards are a way to embed content from Wikipedia Projects in third party websites. Written in Elm and distributed as a JS library.
-    details: |
-      These page previews reduce the cost of exploration and make up for
-      a better reading experience. You can see the [case
-      studies](https://chimeces.com/context-cards/) website for more information
-      and demos.
-
-      The source is available in
-      [Github](https://github.com/joakin/context-cards), and the [UI
-      tests](https://chimeces.com/context-cards/test.html) are very interesting
-      as well.
-  - type: Elm library
-    name: elm-canvas
-    link: https://github.com/joakin/elm-canvas
-    what: |
-      Elm Canvas provides a 2d drawing API for the Elm ecosystem. It improves
-      ease of use of the DOM Canvas APIs with the design, types and docs, and
-      features a bunch of examples to learn from.
-    details: |
-      You can see the [live examples](https://chimeces.com/elm-canvas/) which
-      cover various topics including generative art examples, a paint like
-      mini-app, and some other features.
-
-      The documentation is published on the elm package registry:
-        [joakin/elm-canvas](https://package.elm-lang.org/packages/joakin/elm-canvas/latest/)
-  - type: CLI
-    name: markdown-folder-to-html
-    link: https://github.com/joakin/markdown-folder-to-html
-    what: |
-      Zero config command line tool to turn a folder of markdown and other
-      static files into a publishable website. Written in TypeScript and published to npm.
-    details: |
-      The [live example](http://chimeces.com/markdown-folder-to-html/) shows the
-      default template, which is very easy to override.
-  - type: Workshop
-    name: Diving into ClojureScript
-    link: "http://chimeces.com/cljs-browser-repl/#/notebook/diving-into-clojurescript/file/index"
-    what: |
-      I taught a 4h workshop on ClojureScript at the FutureJS conference in
-      2014 and 2015.
-    details: |
-      In 2015 I adapted the workshop to use the bootstrapped JS compiler on an
-      online repl and crafted a notebook-style interactive workshop.
-
-      * [FutureJS site (see bottom)](http://2015.fullstackfest.com/)
-      * [Interactive browser based workshop](http://chimeces.com/cljs-browser-repl/#/notebook/diving-into-clojurescript/file/index)
-      * [Source](https://github.com/joakin/cljs-browser-repl)
-      
-      First year (2014), the slides and exercises are online.
-
-      * [FutureJS site](http://2014.futurejs.org/workshops/diving-into-clojurescript)
-      * [Slides](http://slides.com/joakino/diving-into-clojurescript/)
-      * [GitHub repo - Exercises and explanations](https://github.com/joakin/diving-into-clojurescript-exercises/)
-
 edu:
-  when: 2004-2009
+  when: 2004 - 2009
   what: Computer Science (Ingeniero en informatica)
   who: University of Alicante
 
-skills:
-  languages:
-    - which: Spanish
-      level: Mother tongue
-    - which: English
-      level: Proficient (C1)
-      titles:
-        - CAE (Certificate in Advanced English)
-        - FCE
+languages:
+  - which: Spanish
+    level: Mother tongue
+  - which: English
+    level: Proficient (C1)
+    titles:
+      - CAE (Certificate in Advanced English)
+      - FCE
 
-  tech:
-    # - text: Test
-    #   children:
-    #     - name: 1
-    #       level: 1
-    #     - name: 2
-    #       level: 2
-    #     - name: 3
-    #       level: 3
-    #     - name: 4
-    #       level: 4
-    #     - name: 5
-    #       level: 5
-    - children:
-        - name: Learning
-          level: 5
-    - text: VCS
-      children:
-        - name: Git
-          level: 4
-    - text: Frontend
-      children:
-        - name: Html
-          level: 5
-        - name: Css
-          level: 5
-        - name: JS
-          level: 5
-        - name: Typescript
-          level: 4
-        - name: React
-          level: 4
-        - name: Elm
-          level: 4
-    - text: UX
-      children:
-        - name: Graphic Design
-          level: 3
-        - name: Mockups
-          level: 4
-        - name: Prototyping
-          level: 5
-        - name: Animation
-          level: 3
-    - text: Backend
-      children:
-        - name: Node.js
-          level: 4
-        - name: Clojure
-          level: 3
-    - text: Systems administration
-      children:
-        - name: OS X
-          level: 4
-        - name: Linux
-          level: 4
-    - text: Programming languages
-      children:
-        - name: JS
-          level: 5
-        - name: ClojureScript
-          level: 4
-        - name: Elm
-          level: 4
-        - name: Python
-          level: 3
-        - name: C
-          level: 2
-        - name: Java
-          level: 3
-        - name: (ba)sh
-          level: 3
+other: |
+  Own vehicle.
 
-  art:
-    - Good taste developed for design and UX through years of self-taught skills
-    - Photography and photo retouching
-    - Web design, and medium level graphic design skills
-    - Computer generated art hobbyist
+  Available to travel, cannot relocate permanently right now.
 
-other:
-  car: Own vehicle.
+  I enjoy computer generated art, compilers and programming languages, UI
+  design and development, and exploring new technologies that grow the way we
+  think about solving problems.
 
-  remote: Available to travel, cannot relocate permanently right now.
+  I am not afraid of learning new technology, projects and codebases.
 

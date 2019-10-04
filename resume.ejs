@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CV Joaquin Oltra</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display|Libre+Franklin"
+      rel="stylesheet"
+    />
+    <link type="text/css" rel="stylesheet" media="all" href="normalize.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="resume.css" />
+    <script>
+      if (window.matchMedia) {
+        var printMediaQuery = window.matchMedia("print");
+        printMediaQuery.addListener(function(mql) {
+          if (mql.matches) {
+            beforePrint();
+          } else {
+            afterPrint();
+          }
+        });
+      } else {
+        // IE, Firefox
+        window.onbeforeprint = openDetails;
+        window.onafterprint = closeDetails;
+      }
+
+      function openDetails() {
+        Array.from(document.querySelectorAll("details")).forEach(e =>
+          e.toggleAttribute("open")
+        );
+      }
+      function closeDetails() {
+        Array.from(document.querySelectorAll("details")).forEach(e =>
+          e.removeAttribute("open")
+        );
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <a href="http://chimeces.com/resume/">Web</a>
+      ·
+      <a href="http://chimeces.com/resume/resume.pdf">PDF</a>
+      ·
+      <a href="http://github.com/joakin/resume">Source</a>
+      ·
+      <span>
+        <a href="javascript:openDetails()">Open</a>
+        /
+        <a href="javascript:closeDetails()">Close</a>
+        details
+      </span>
+    </header>
+    <div id="container">
+      <header class="main">
+        <h1><%= fullName %></h1>
+        <img src="<%= photo %>" class="photo" />
+      </header>
+      <section id="personal-information" class="personal-information">
+        <article>
+          <div class="kv phone">
+            <label><img src="./img/github.svg" alt="Github" width="24px" height="24px" /></label>
+            <span><a href="https://github.com/<%= github %>">@<%= github %></a></span>
+          </div>
+          <div class="kv email">
+            <label>Email</label>
+            <span><a href="mailto:<%= email %>"><%= email %></a></span>
+          </div>
+          <div class="kv phone">
+            <label>Phone</label>
+            <span><a href="tel:<%= phone %>"><%= phone %></a></span>
+          </div>
+          <div class="kv nationality">
+            <label>Nationality</label>
+            <span><%= nationality %></span>
+          </div>
+          <div class="kv age">
+            <label>Age</label>
+            <span><%= (new Date()).getFullYear() - 1985 %></span>
+          </div>
+        </article>
+      </section>
+      <section id="current-situation" class="current-situation">
+        <header>
+          <h2>Summary</h2>
+        </header>
+        <article class="body">
+          <%- md(intro) %>
+        </article>
+      </section>
+      <section id="work-experience" class="work-experience">
+        <header>
+          <h2>Work experience</h2>
+        </header>
+
+        <% work.forEach(function(job) { %>
+          <article
+            id="<%= `${job.employer}-${job.start}-${job.end || ""}-${job.position}`.replace(/ /g, '_') %>"
+          >
+            <header class="header-3el">
+              <div class="employer"><%= job.employer %></div>
+              <div class="position"><%= job.position %></div>
+              <div class="date"><%= job.start %><%= job.end ? ` − ${job.end}` : ' − ‥.' %></div>
+            </header>
+            <div class="body">
+              <% 
+              let hideAfter = 6;
+              function isOldJob(job) { return job.end && job.end <= (new Date()).getFullYear() - hideAfter; }
+              %>
+              <%- isOldJob(job) ? '' : md(job.what) %>
+              <% if (job.details) { %>
+                <details>
+                  <summary>Details</summary>
+                  <%- isOldJob(job) ? md(job.what) : '' %>
+                  <%- md(job.details) %>
+                </details>
+              <% } %>
+            </div>
+          </article>
+        <% }); %>
+      </section>
+      <section id="education" class="education">
+        <header>
+          <h2>Education</h2>
+        </header>
+        <article class="header-3el">
+          <div class="from"><%= edu.who %></div>
+          <div class="title"><%= edu.what %></div>
+          <div class="date"><%= edu.when %></div>
+        </article>
+      </section>
+      <section id="languages" class="languages">
+        <header>
+          <h2>Languages</h2>
+        </header>
+        <% languages.forEach(function(lang) { %>
+          <div class="header-3el">
+            <div class="name"><%= lang.which %></div>
+            <div class="level"><%= lang.level %></div>
+            <% if (lang.titles) { %>
+              <div>
+                <% lang.titles.forEach(function(title) { %> <%= title %><br />
+                <% }); %>
+              </div>
+            <% } %>
+          </div>
+        <% }); %>
+      </section>
+      <section id="other" class="other">
+        <header>
+          <h2>Additional information</h2>
+        </header>
+        <article class="body">
+          <%- md(other) %>
+        </article>
+      </section>
+    </div>
+    <footer>
+      <p>
+        This resume was generated from YAML, HTML, JS and CSS using Node.js and
+        is open source.
+      </p>
+      <p>
+        To learn more visit the online version at
+        <a href="http://chimeces.com/resume/">chimeces.com/resume</a> or check
+        the underlying source at the
+        <a href="http://github.com/joakin/resume">GitHub repo</a>.
+      </p>
+    </footer>
+  </body>
+</html>

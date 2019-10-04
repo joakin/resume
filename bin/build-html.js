@@ -13,7 +13,7 @@ const data = yaml.safeLoad(fs.readFileSync(root + "resume.yaml", "utf8"));
 fs.writeFileSync(
   root + htmlPath,
   ejs.render(
-    fs.readFileSync(root + "resume.html", "utf8"),
+    fs.readFileSync(root + "resume.ejs", "utf8"),
     Object.assign({ md }, data),
     {}
   )

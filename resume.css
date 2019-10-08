@@ -57,6 +57,12 @@ body > header > * {
 
   footer {
   }
+
+  a {
+    color: #3b77a3;
+    text-decoration: none;
+    border-bottom: 1px solid #cfebff;
+  }
 }
 
 .kv {

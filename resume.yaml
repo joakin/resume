@@ -3,7 +3,7 @@ photo: photo.jpg
 phone: (0034) 600078947
 email: joaquin@chimeces.com
 nationality: Spain
-birthDate: 17-12-85
+birthYear: 1985
 github: joakin
 
 intro: |
@@ -22,64 +22,85 @@ work:
     start: 2018
     position: Software Engineering Manager
     what: |
-      Remote. Managing 5 engineers in the Product Infrastructure team, where we:
-
-      * Built REST APIs to be consumed by the native apps teams and the web
-        teams serving millions of hits per day
-      * Maintained a variety of backend components providing features such as
-        reading lists, PDF rendering, and the Wikipedia Maps infrastructure
-      * Defined and resourced an effort to provide better data engineering tools
-        and libraries for all product teams in the product department
-    details: |
-      More information about the team can be found at the [Wikimedia Product
+      Remote. Managing 5 engineers in the [Wikimedia Product
       Infrastructure](https://www.mediawiki.org/wiki/Wikimedia_Product/Wikimedia_Product_Infrastructure_team)
-      team page, including the team's mission and responsibilities, and a list
-      of the main projects we were involved with.
+      team, where we:
+
+      * Built [REST APIs][pcs] used by the native apps teams and the web teams
+        serving 1.5 billion unique devices serving 2 billion requests monthly
+      * Maintained a variety of backend components providing features such as
+        [reading lists][rl], [PDF rendering][proton], and the [Wikipedia Maps
+        infrastructure][maps]
+      * Planned and resourced an [effort][buod] to provide better data
+        engineering tools and libraries for all product teams in the product
+        department
+
+      And where **I** set team direction and goals, hired awesome engineers to
+      further Wikimedia's objectives, giving them space and trust to work
+      effectively in a complex collaborative remote environment.
+
+      [pcs]: https://www.mediawiki.org/wiki/Page_Content_Service
+      [rl]: https://www.mediawiki.org/wiki/Reading/Reading_List_Service
+      [proton]: https://www.mediawiki.org/wiki/Proton
+      [maps]: https://www.mediawiki.org/wiki/Wikimedia_Maps
+      [buod]: https://meta.wikimedia.org/wiki/Wikimedia_Foundation_Annual_Plan/2018-2019/Audiences#Outcome_3:_Data_collection
 
   - employer: Wikimedia Foundation
     start: 2016
     end: 2018
     position: Senior Software engineer
     what: |
-      Remote. Worked on the Mobile Web team doing JavaScript, CSS and MediaWiki
-      PHP programming for the mobile Wikipedia websites which powers the user
-      experience of over 65% of Wikipedia's traffic.
+      Remote. Worked on the [Mobile Web team][moweb] doing JavaScript, CSS and
+      MediaWiki PHP programming for the mobile Wikipedia websites which powers
+      the user experience of ~60% of Wikipedia's traffic ([9.5 billion monthly
+      pageviews][pageviews] on [1.5 billion monthly unique devices][devices]).
 
-      Produced performance research and analysis of the content and website
-      loading which informed several high impact projects over the following
-      years.
+      Produced performance research and [analysis][] of the content and website
+      loading which [informed][wdspreso] several high impact projects, like
+      [lazy loading images][lli1] and [references][].
 
-      Worked on Page previews, providing hover cards for Desktop web improving
-      the reading experience for all Wikipedia users.
+      Worked on [Page previews][pp] ( [1][pp2] ), providing [link previews for
+      Desktop Wikipedia][pp1] improving the reading experience for 1.5 billion
+      unique devices serving 2 billion requests monthly.
 
-      Led and planned technical improvement projects to reduce debt and
+      Led and planned [technical improvement projects][tip] to reduce debt and
       modernize the codebase while working on Product's goals.
-    details: |
-      More details on the team's responsibilities and goals in the
-      [Reading/Web](https://www.mediawiki.org/wiki/Reading/Web) page, and on
-      team practices and processes on the
-      [Reading/Web/Team](https://www.mediawiki.org/wiki/Readers/Web/Team) page.
+
+      [moweb]: https://www.mediawiki.org/wiki/Readers/Web/Team
+      [devices]: https://stats.wikimedia.org/v2/#/all-wikipedia-projects/reading/unique-devices/normal|line|2-year|~total|monthly
+      [pageviews]: https://stats.wikimedia.org/v2/#/all-projects/reading/total-page-views/normal|bar|2-year|access~mobile-web|monthly
+      [analysis]: http://chimeces.com/loot-content-analysis/
+      [wdspreso]: https://www.youtube.com/watch?v=SOMN8Q__iiE
+      [lli1]: https://blog.wikimedia.org/2016/09/19/mobile-web-improvements/
+      [references]: https://www.mediawiki.org/wiki/Reading/Web/Projects/Performance/Lazy_loading_references
+      [pp]: https://www.mediawiki.org/wiki/Page_Previews
+      [pp1]: https://blog.wikimedia.org/2018/04/17/wikipedia-page-previews/
+      [pp2]: https://blog.wikimedia.org/2018/05/09/page-previews-documentation/
+      [tip]: https://www.mediawiki.org/wiki/Reading/Web/Projects/Invest_in_the_MobileFrontend_%26_MinervaNeue_frontend_architecture
 
   - employer: Wikimedia Foundation
     start: 2014
     end: 2016
     position: Software engineer
     what: |
-      Remote. Worked on the Mobile Web team doing JavaScript, CSS and Mediawiki
-      PHP programming for the mobile Wikipedia websites which powers the user
-      experience of over 65% of Wikipedia's traffic.
+      Remote. Worked on the [Mobile Web team][moweb] doing JavaScript, CSS and
+      MediaWiki PHP programming for the mobile Wikipedia websites which powers
+      the user experience of ~60% of Wikipedia's traffic ([9.5 billion monthly
+      pageviews][pageviews] on [1.5 billion monthly unique devices][devices]).
 
-      Built several additional projects including a Survey feature for
+      Built several additional projects including a [Survey][qs] feature for
       MediaWiki, public and private reading lists.
 
-      Participated in a generative research project on emergent countries
-      quickly building several prototypes to test ideas out with users, and
-      participating in the interview process and information analysis.
-    details: |
-      More details on the team's responsibilities and goals in the
-      [Reading/Web](https://www.mediawiki.org/wiki/Reading/Web) page, and on
-      team practices and processes on the
-      [Reading/Web/Team](https://www.mediawiki.org/wiki/Readers/Web/Team) page.
+      Participated in a [generative research project][mx] on emergent countries
+      quickly [building several prototypes][nr] to test ideas out with users,
+      and participating in the interview process and information analysis.
+
+      [moweb]: https://www.mediawiki.org/wiki/Readers/Web/Team
+      [devices]: https://stats.wikimedia.org/v2/#/all-wikipedia-projects/reading/unique-devices/normal|line|2-year|~total|monthly
+      [pageviews]: https://stats.wikimedia.org/v2/#/all-projects/reading/total-page-views/normal|bar|2-year|access~mobile-web|monthly
+      [qs]: https://www.mediawiki.org/wiki/Extension:QuickSurveys
+      [mx]: https://www.mediawiki.org/wiki/Reading/Mexico_Readers_Research
+      [nr]: https://www.mediawiki.org/wiki/Reading/Web/Projects/New_Readers_2016-17_Q2
 
   - employer: Freelance
     start: 2013

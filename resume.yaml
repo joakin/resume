@@ -2,18 +2,18 @@ fullName: Joaquín Oltra Hernández
 photo: photo.jpg
 phone: (0034) 600078947
 email: joaquin@chimeces.com
-nationality: Spain
-birthYear: 1985
+location: Alicante, Spain
+timezones: CET ⋅ ET ⋅ PT
 github: joakin
 
 intro: |
   I am a **Senior Software Engineer** and **Engineering Manager** with more than
-  10 years of industry experience. I am a specialist in *UI web development*,
-  and have broad experience in the different skills involved in software
-  engineering and delivering products, effectively and producing maintainable
-  software.
+  10 years of industry experience. As an engineer I specialize in *UI web
+  development*, and have broad experience in the different skills involved in
+  software engineering and delivering products, effectively and producing
+  maintainable software.
 
-  As a manager I strive for providing clear direction, trust and autonomy to my
+  As a manager I strive to provide clear direction, trust and autonomy to my
   reports so that they can execute on the team and organization's objectives
   effectively, while developing professionally and advancing their careers.
 
@@ -35,9 +35,9 @@ work:
         engineering tools and libraries for all product teams in the product
         department
 
-      And where **I** set team direction and goals, hired awesome engineers to
-      further Wikimedia's objectives, giving them space and trust to work
-      effectively in a complex collaborative remote environment.
+      I set team direction and anual and quarterly goals, hired and managed
+      awesome engineers to further Wikimedia's objectives, giving them space and
+      trust to work effectively in a complex collaborative remote environment.
 
       [pcs]: https://www.mediawiki.org/wiki/Page_Content_Service
       [rl]: https://www.mediawiki.org/wiki/Reading/Reading_List_Service
@@ -48,7 +48,7 @@ work:
   - employer: Wikimedia Foundation
     start: 2016
     end: 2018
-    position: Senior Software engineer
+    position: Senior Software Engineer
     what: |
       Remote. Worked on the [Mobile Web team][moweb] doing JavaScript, CSS and
       MediaWiki PHP programming for the mobile Wikipedia websites which powers
@@ -81,7 +81,7 @@ work:
   - employer: Wikimedia Foundation
     start: 2014
     end: 2016
-    position: Software engineer
+    position: Software Engineer
     what: |
       Remote. Worked on the [Mobile Web team][moweb] doing JavaScript, CSS and
       MediaWiki PHP programming for the mobile Wikipedia websites which powers
@@ -105,7 +105,7 @@ work:
   - employer: Freelance
     start: 2013
     end: 2014
-    position: Software engineer, Web development
+    position: Software Engineer, Web Developer
     what: |
       Remote. Freelance contracting for different clients. JavaScript, HTML & CSS, data visualizations dashboard with d3, web applications.
     details: |
@@ -121,7 +121,7 @@ work:
   - employer: OHIM
     start: 2010
     end: 2013
-    position: Senior software engineer
+    position: Senior Software Engineer
     what: |
       Built a frontend team and worked on OHIM eSearch (JS web application) and
       the new OHIM Website (public site and suite of web tools).
@@ -161,7 +161,7 @@ work:
   - employer: CESSER
     start: 2010
     end: 2010
-    position: Software engineer, Web development
+    position: Software Engineer, Web Developer
     what: |
       Worked on styles, layouts, themes and JS plugins for client websites
       that used Drupal (mysql, php).
@@ -173,7 +173,7 @@ work:
   - employer: University of Alicante
     start: 2008
     end: 2010
-    position: Software engineer, Web development
+    position: Software Engineer, Web Developer
     what: |
       Design and development of a browser application to create, layout and
       fill magazines, and generating a print version of them in PDF.
@@ -196,7 +196,7 @@ work:
   - employer: Diario Informacion / Newspaper
     start: 2006
     end: 2008
-    position: Systems administrator
+    position: Systems Administrator
     what: |
       Windows, Linux and OS X user machines and servers, network infrastructure
       and customer support (editors and journalists).
@@ -208,12 +208,13 @@ edu:
 
 languages:
   - which: Spanish
-    level: Mother tongue
+    level: Native speaker
   - which: English
     level: Proficient (C1)
     titles:
       - CAE (Certificate in Advanced English)
       - FCE
+      - Excellent oral and written English and conversational skills
 
 other: |
   Own vehicle.

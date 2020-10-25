@@ -47,6 +47,7 @@ body > header > * {
 
   /* section, */
   article,
+  footer,
   .print-no-break-inside {
     page-break-inside: avoid;
   }

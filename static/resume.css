@@ -119,6 +119,12 @@ body > header > * {
   object-fit: cover;
 }
 
+@media print {
+  #container > header img.photo {
+    display: none;
+  }
+}
+
 section {
   margin-bottom: 40px;
 }

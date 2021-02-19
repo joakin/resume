@@ -18,95 +18,129 @@ intro: |
 
 work:
   - employer: Wikimedia Foundation
-    start: 2018
-    position: Software Engineering Manager
-    what: |
-      Remote. Managing 5 engineers in the [Wikimedia Product
-      Infrastructure](https://www.mediawiki.org/wiki/Wikimedia_Product/Wikimedia_Product_Infrastructure_team)
-      team, where we:
+    positions:
+      - start: 2020
+        position: Staff Developer Advocate
+        what: |
+          Remote. Working in the [Developer Advocacy team][devadv] in support of
+          the [Cloud Services team][wmcsteam] and tool developer community,
+          where we:
 
-      * Built [REST APIs][pcs] used by the native apps teams and the web teams
-        serving 1.5 billion unique devices serving 2 billion requests monthly
-      * Maintained a variety of backend components providing features such as
-        [reading lists][rl], [PDF rendering][proton], and the [Wikipedia Maps
-        infrastructure][maps]
-      * Planned and resourced an [effort][buod] to provide better data
-        engineering tools and libraries for all product teams in the product
-        department
+          * Designed and conducted the [2020 Coolest Tool Award][2020cta] online
+            event jointly with community members, coordinating the event
+            committee, and helping produce and run the event
+          * Conducted, analyzed and published the [Cloud Services Annual
+            Survey][survey] 2019 and 2020, to understand our technical users and
+            inform the teams' annual planning processes
+          * Analyzed research, and produced a prioritized list of
+            communities for outreach based on data, and run an outreach workshop
+            about [bot development][botwork] with Python
+          * Supported the Cloud Services teams projects, like deploying a new
+            cluster of databases to replace the existing one, by providing
+            [technical documentation][wikireplicas] and code examples, and
+            communicating and supporting the communities through the process
 
-      I set team direction and anual and quarterly goals, hired and managed
-      awesome engineers to further Wikimedia's objectives, giving them space and
-      trust to work effectively in a complex collaborative remote environment.
+          [devadv]: https://www.mediawiki.org/wiki/Developer_Advocacy
+          [wmcsteam]: https://www.mediawiki.org/wiki/Wikimedia_Cloud_Services_team
+          [2020cta]: https://meta.wikimedia.org/wiki/Coolest_Tool_Award/2020
+          [botwork]: https://meta.wikimedia.org/wiki/Small_wiki_toolkits/South_Asia/Workshops#Bots_workshop
+          [survey]: https://meta.wikimedia.org/wiki/Research:Cloud_Services_Annual_Survey
+          [wikireplicas]: https://wikitech.wikimedia.org/wiki/News/Wiki_Replicas_2020_Redesign
 
-      [pcs]: https://www.mediawiki.org/wiki/Page_Content_Service
-      [rl]: https://www.mediawiki.org/wiki/Reading/Reading_List_Service
-      [proton]: https://www.mediawiki.org/wiki/Proton
-      [maps]: https://www.mediawiki.org/wiki/Wikimedia_Maps
-      [buod]: https://meta.wikimedia.org/wiki/Wikimedia_Foundation_Annual_Plan/2018-2019/Audiences#Outcome_3:_Data_collection
+      - start: 2018
+        end: 2020
+        position: Software Engineering Manager
+        what: |
+          Remote. Managing 5 engineers in the [Wikimedia Product
+          Infrastructure](https://www.mediawiki.org/wiki/Wikimedia_Product/Wikimedia_Product_Infrastructure_team)
+          team, where we:
 
-  - employer: Wikimedia Foundation
-    start: 2016
-    end: 2018
-    position: Senior Software Engineer
-    what: |
-      Remote. Worked on the [Mobile Web team][moweb] doing JavaScript, CSS and
-      MediaWiki PHP programming for the mobile Wikipedia websites which powers
-      the user experience of ~60% of Wikipedia's traffic ([9.5 billion monthly
-      pageviews][pageviews] on [1.5 billion monthly unique devices][devices]).
+          * Built [REST APIs][pcs] used by the native apps teams and the web
+            teams serving 1.5 billion unique devices serving 2 billion requests
+            monthly
+          * Maintained a variety of backend components providing features such
+            as [reading lists][rl], [PDF rendering][proton], and the [Wikipedia
+            Maps infrastructure][maps]
+          * Planned and resourced an [effort][buod] to provide better data
+            engineering tools and libraries for all product teams in the product
+            department
 
-      Produced performance research and [analysis][] of the content and website
-      loading which [informed][wdspreso] several high impact projects, like
-      [lazy loading images][lli1] and [references][].
+          I set team direction and anual and quarterly goals, hired and managed
+          awesome engineers to further Wikimedia's objectives, giving them space
+          and trust to work effectively in a complex collaborative remote
+          environment.
 
-      Worked on [Page previews][pp] ( [1][pp2] ), providing [link previews for
-      Desktop Wikipedia][pp1] improving the reading experience for 1.5 billion
-      unique devices serving 2 billion requests monthly.
+          [pcs]: https://www.mediawiki.org/wiki/Page_Content_Service
+          [rl]: https://www.mediawiki.org/wiki/Reading/Reading_List_Service
+          [proton]: https://www.mediawiki.org/wiki/Proton
+          [maps]: https://www.mediawiki.org/wiki/Wikimedia_Maps
+          [buod]: https://meta.wikimedia.org/wiki/Wikimedia_Foundation_Annual_Plan/2018-2019/Audiences#Outcome_3:_Data_collection
 
-      Led and planned [technical improvement projects][tip] to reduce debt and
-      modernize the codebase while working on Product's goals.
+      - start: 2016
+        end: 2018
+        position: Senior Software Engineer
+        what: |
+          Remote. Worked on the [Mobile Web team][moweb] doing JavaScript, CSS
+          and MediaWiki PHP programming for the mobile Wikipedia websites which
+          powers the user experience of ~60% of Wikipedia's traffic ([9.5
+          billion monthly pageviews][pageviews] on [1.5 billion monthly unique
+          devices][devices]).
 
-      [moweb]: https://www.mediawiki.org/wiki/Readers/Web/Team
-      [devices]: https://stats.wikimedia.org/v2/#/all-wikipedia-projects/reading/unique-devices/normal|line|2-year|~total|monthly
-      [pageviews]: https://stats.wikimedia.org/v2/#/all-projects/reading/total-page-views/normal|bar|2-year|access~mobile-web|monthly
-      [analysis]: http://chimeces.com/loot-content-analysis/
-      [wdspreso]: https://www.youtube.com/watch?v=SOMN8Q__iiE
-      [lli1]: https://blog.wikimedia.org/2016/09/19/mobile-web-improvements/
-      [references]: https://www.mediawiki.org/wiki/Reading/Web/Projects/Performance/Lazy_loading_references
-      [pp]: https://www.mediawiki.org/wiki/Page_Previews
-      [pp1]: https://blog.wikimedia.org/2018/04/17/wikipedia-page-previews/
-      [pp2]: https://blog.wikimedia.org/2018/05/09/page-previews-documentation/
-      [tip]: https://www.mediawiki.org/wiki/Reading/Web/Projects/Invest_in_the_MobileFrontend_%26_MinervaNeue_frontend_architecture
+          Produced performance research and [analysis][] of the content and
+          website loading which [informed][wdspreso] several high impact
+          projects, like [lazy loading images][lli1] and [references][].
 
-  - employer: Wikimedia Foundation
-    start: 2014
-    end: 2016
-    position: Software Engineer
-    what: |
-      Remote. Worked on the [Mobile Web team][moweb] doing JavaScript, CSS and
-      MediaWiki PHP programming for the mobile Wikipedia websites which powers
-      the user experience of ~60% of Wikipedia's traffic ([9.5 billion monthly
-      pageviews][pageviews] on [1.5 billion monthly unique devices][devices]).
+          Worked on [Page previews][pp] ( [1][pp2] ), providing [link previews
+          for Desktop Wikipedia][pp1] improving the reading experience for 1.5
+          billion unique devices serving 2 billion requests monthly.
 
-      Built several additional projects including a [Survey][qs] feature for
-      MediaWiki, public and private reading lists.
+          Led and planned [technical improvement projects][tip] to reduce debt
+          and modernize the codebase while working on Product's goals.
 
-      Participated in a [generative research project][mx] on emergent countries
-      quickly [building several prototypes][nr] to test ideas out with users,
-      and participating in the interview process and information analysis.
+          [moweb]: https://www.mediawiki.org/wiki/Readers/Web/Team
+          [devices]: https://stats.wikimedia.org/v2/#/all-wikipedia-projects/reading/unique-devices/normal|line|2-year|~total|monthly
+          [pageviews]: https://stats.wikimedia.org/v2/#/all-projects/reading/total-page-views/normal|bar|2-year|access~mobile-web|monthly
+          [analysis]: http://chimeces.com/loot-content-analysis/
+          [wdspreso]: https://www.youtube.com/watch?v=SOMN8Q__iiE
+          [lli1]: https://blog.wikimedia.org/2016/09/19/mobile-web-improvements/
+          [references]: https://www.mediawiki.org/wiki/Reading/Web/Projects/Performance/Lazy_loading_references
+          [pp]: https://www.mediawiki.org/wiki/Page_Previews
+          [pp1]: https://blog.wikimedia.org/2018/04/17/wikipedia-page-previews/
+          [pp2]: https://blog.wikimedia.org/2018/05/09/page-previews-documentation/
+          [tip]: https://www.mediawiki.org/wiki/Reading/Web/Projects/Invest_in_the_MobileFrontend_%26_MinervaNeue_frontend_architecture
 
-      [moweb]: https://www.mediawiki.org/wiki/Readers/Web/Team
-      [devices]: https://stats.wikimedia.org/v2/#/all-wikipedia-projects/reading/unique-devices/normal|line|2-year|~total|monthly
-      [pageviews]: https://stats.wikimedia.org/v2/#/all-projects/reading/total-page-views/normal|bar|2-year|access~mobile-web|monthly
-      [qs]: https://www.mediawiki.org/wiki/Extension:QuickSurveys
-      [mx]: https://www.mediawiki.org/wiki/Reading/Mexico_Readers_Research
-      [nr]: https://www.mediawiki.org/wiki/Reading/Web/Projects/New_Readers_2016-17_Q2
+      - start: 2014
+        end: 2016
+        position: Software Engineer
+        what: |
+          Remote. Worked on the [Mobile Web team][moweb] doing JavaScript, CSS
+          and MediaWiki PHP programming for the mobile Wikipedia websites which
+          powers the user experience of ~60% of Wikipedia's traffic ([9.5
+          billion monthly pageviews][pageviews] on [1.5 billion monthly unique
+          devices][devices]).
+
+          Built several additional projects including a [Survey][qs] feature for
+          MediaWiki, public and private reading lists.
+
+          Participated in a [generative research project][mx] on emergent
+          countries quickly [building several prototypes][nr] to test ideas out
+          with users, and participating in the interview process and information
+          analysis.
+
+          [moweb]: https://www.mediawiki.org/wiki/Readers/Web/Team
+          [devices]: https://stats.wikimedia.org/v2/#/all-wikipedia-projects/reading/unique-devices/normal|line|2-year|~total|monthly
+          [pageviews]: https://stats.wikimedia.org/v2/#/all-projects/reading/total-page-views/normal|bar|2-year|access~mobile-web|monthly
+          [qs]: https://www.mediawiki.org/wiki/Extension:QuickSurveys
+          [mx]: https://www.mediawiki.org/wiki/Reading/Mexico_Readers_Research
+          [nr]: https://www.mediawiki.org/wiki/Reading/Web/Projects/New_Readers_2016-17_Q2
 
   - employer: Freelance
     start: 2013
     end: 2014
     position: Software Engineer, Web Developer
     what: |
-      Remote. Freelance contracting for different clients. JavaScript, HTML & CSS, data visualizations dashboard with d3, web applications.
+      Remote. Freelance contracting for different clients. JavaScript, HTML
+      & CSS, data visualizations dashboard with d3, web applications.
     details: |
       * Data visualizations dashboard with d3
       * JS web applications
@@ -201,8 +235,8 @@ work:
       and customer support (editors and journalists).
 
 edu:
-  when: 2004 - 2009
-  what: Computer Science (Ingeniero en informatica)
+  when: 2003 - 2009
+  what: Computer Science MSc (Ingeniero Superior Informatica)
   who: University of Alicante
 
 languages:

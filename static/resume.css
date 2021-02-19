@@ -46,7 +46,7 @@ body > header > * {
   }
 
   /* section, */
-  article,
+  /* article, */
   footer,
   .print-no-break-inside {
     page-break-inside: avoid;
@@ -146,6 +146,19 @@ section > article {
 
 section .body {
   margin: 0 0.5rem;
+}
+
+section .body > h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--header-bg-border-fg);
+}
+
+section .body > h3 > .date {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 75%;
 }
 
 details {

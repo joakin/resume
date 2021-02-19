@@ -8,7 +8,7 @@ const md = require("marked");
 const root = __dirname + "/../";
 const htmlPath = "static/index.html";
 
-const data = yaml.safeLoad(fs.readFileSync(root + "resume.yaml", "utf8"));
+const data = yaml.load(fs.readFileSync(root + "resume.yaml", "utf8"));
 
 fs.writeFileSync(
   root + htmlPath,

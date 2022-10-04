@@ -119,13 +119,16 @@
                 <% 
                 let hideAfter = 6;
                 function isOldJob(job) { return job.end && job.end <= (new Date()).getFullYear() - hideAfter; }
+                let isOld = isOldJob(job);
                 %>
-                <%- isOldJob(job) ? '' : md(job.what) %>
-                <% if (job.details) { %>
+                <% if (!isOld) { %>
+                  <%- job.what ? md(job.what) : '' %>
+                  <%- job.details ? md(job.details) : '' %>
+                <% } else if (job.what || job.details) { %>
                   <details>
                     <summary>Details</summary>
-                    <%- isOldJob(job) ? md(job.what) : '' %>
-                    <%- md(job.details) %>
+                    <%- job.what ? md(job.what) : '' %>
+                    <%- job.details ? md(job.details) : '' %>
                   </details>
                 <% } %>
               </div>

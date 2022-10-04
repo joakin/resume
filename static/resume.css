@@ -3,7 +3,19 @@
   --kv-k-color: #aaa;
 }
 
+@media (prefers-color-scheme: dark) {
+  html {
+    filter: hue-rotate(180deg) invert(1);
+  }
+
+  html img,
+  html [style*="background-image:"] {
+    filter: invert(1) hue-rotate(180deg);
+  }
+}
+
 body {
+  background-color: white;
   color: #333;
   font-family: "Libre Franklin", sans-serif;
   font-size: 16px;

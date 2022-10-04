@@ -19,13 +19,43 @@ intro: |
 work:
   - employer: Wikimedia Foundation
     positions:
+      - start: 2021
+        position: Staff Software Engineer, Tech lead
+        what: |
+          Remote. Working in the [Trust and Safety Tools][tstteam] team as the
+          tech lead and software engineer.
+
+          [tstteam]: https://www.mediawiki.org/wiki/Trust_and_Safety_Tools
+
+        details: |
+          * Defined project scope, performed technical feasibility research and
+            worked with product manager, designer, and other stakeholders on
+            defining and detailing the project into actionable technical work
+            to be executed by the team for major projects like the
+            [Safety Survey][safesur] and
+            [Private Incident Reporting System][pirs]
+          * Led set up of team kanban processes and norms collaboratively and
+            codified the norms and processes in our tools and documentation
+          * Onboarded and guided several engineers on the team into the company 
+            and projects
+          * Developed several features for MediaWiki's QuickSurveys extension
+            and trained engineers on deployment procedures for configuring,
+            enabling and disabling surveys
+
+          [safesur]: https://meta.wikimedia.org/wiki/Community_Safety
+          [pirs]: https://meta.wikimedia.org/wiki/Private_Incident_Reporting_System
+
       - start: 2020
+        end: 2021
         position: Staff Developer Advocate
         what: |
           Remote. Working in the [Developer Advocacy team][devadv] in support of
-          the [Cloud Services team][wmcsteam] and tool developer community,
-          where we:
+          the [Cloud Services team][wmcsteam] and tool developer community.
 
+          [devadv]: https://www.mediawiki.org/wiki/Developer_Advocacy
+          [wmcsteam]: https://www.mediawiki.org/wiki/Wikimedia_Cloud_Services_team
+
+        details: |
           * Designed and conducted the [2020 Coolest Tool Award][2020cta] online
             event jointly with community members, coordinating the event
             committee, and helping produce and run the event
@@ -40,8 +70,6 @@ work:
             [technical documentation][wikireplicas] and code examples, and
             communicating and supporting the communities through the process
 
-          [devadv]: https://www.mediawiki.org/wiki/Developer_Advocacy
-          [wmcsteam]: https://www.mediawiki.org/wiki/Wikimedia_Cloud_Services_team
           [2020cta]: https://meta.wikimedia.org/wiki/Coolest_Tool_Award/2020
           [botwork]: https://meta.wikimedia.org/wiki/Small_wiki_toolkits/South_Asia/Workshops#Bots_workshop
           [survey]: https://meta.wikimedia.org/wiki/Research:Cloud_Services_Annual_Survey
@@ -51,10 +79,11 @@ work:
         end: 2020
         position: Software Engineering Manager
         what: |
-          Remote. Managing 5 engineers in the [Wikimedia Product
+          Remote. Manager of the [Wikimedia Product
           Infrastructure](https://www.mediawiki.org/wiki/Wikimedia_Product/Wikimedia_Product_Infrastructure_team)
-          team, where we:
+          team.
 
+        details: |
           * Built [REST APIs][pcs] used by the native apps teams and the web
             teams serving 1.5 billion unique devices serving 2 billion requests
             monthly
@@ -86,6 +115,11 @@ work:
           billion monthly pageviews][pageviews] on [1.5 billion monthly unique
           devices][devices]).
 
+          [moweb]: https://www.mediawiki.org/wiki/Readers/Web/Team
+          [devices]: https://stats.wikimedia.org/v2/#/all-wikipedia-projects/reading/unique-devices/normal|line|2-year|~total|monthly
+          [pageviews]: https://stats.wikimedia.org/v2/#/all-projects/reading/total-page-views/normal|bar|2-year|access~mobile-web|monthly
+
+        details: |
           Produced performance research and [analysis][] of the content and
           website loading which [informed][wdspreso] several high impact
           projects, like [lazy loading images][lli1] and [references][].
@@ -97,9 +131,6 @@ work:
           Led and planned [technical improvement projects][tip] to reduce debt
           and modernize the codebase while working on Product's goals.
 
-          [moweb]: https://www.mediawiki.org/wiki/Readers/Web/Team
-          [devices]: https://stats.wikimedia.org/v2/#/all-wikipedia-projects/reading/unique-devices/normal|line|2-year|~total|monthly
-          [pageviews]: https://stats.wikimedia.org/v2/#/all-projects/reading/total-page-views/normal|bar|2-year|access~mobile-web|monthly
           [analysis]: http://chimeces.com/loot-content-analysis/
           [wdspreso]: https://www.youtube.com/watch?v=SOMN8Q__iiE
           [lli1]: https://blog.wikimedia.org/2016/09/19/mobile-web-improvements/
@@ -119,6 +150,10 @@ work:
           billion monthly pageviews][pageviews] on [1.5 billion monthly unique
           devices][devices]).
 
+          [moweb]: https://www.mediawiki.org/wiki/Readers/Web/Team
+          [pageviews]: https://stats.wikimedia.org/v2/#/all-projects/reading/total-page-views/normal|bar|2-year|access~mobile-web|monthly
+          [devices]: https://stats.wikimedia.org/v2/#/all-wikipedia-projects/reading/unique-devices/normal|line|2-year|~total|monthly
+        details: |
           Built several additional projects including a [Survey][qs] feature for
           MediaWiki, public and private reading lists.
 
@@ -127,9 +162,6 @@ work:
           with users, and participating in the interview process and information
           analysis.
 
-          [moweb]: https://www.mediawiki.org/wiki/Readers/Web/Team
-          [devices]: https://stats.wikimedia.org/v2/#/all-wikipedia-projects/reading/unique-devices/normal|line|2-year|~total|monthly
-          [pageviews]: https://stats.wikimedia.org/v2/#/all-projects/reading/total-page-views/normal|bar|2-year|access~mobile-web|monthly
           [qs]: https://www.mediawiki.org/wiki/Extension:QuickSurveys
           [mx]: https://www.mediawiki.org/wiki/Reading/Mexico_Readers_Research
           [nr]: https://www.mediawiki.org/wiki/Reading/Web/Projects/New_Readers_2016-17_Q2
@@ -259,4 +291,3 @@ other: |
   think about solving problems.
 
   I am not afraid of learning new technology, projects and codebases.
-

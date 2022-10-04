@@ -3,7 +3,7 @@
 const fs = require("fs");
 const yaml = require("js-yaml");
 const ejs = require("ejs");
-const md = require("marked");
+const { parse: md } = require("marked");
 
 const root = __dirname + "/../";
 const htmlPath = "static/index.html";

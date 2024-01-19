@@ -30,6 +30,7 @@ work:
       * Developed a user-friendly, step-by-step account setup and onboarding process.
       * Built an onboarding guide with real-time alerts to help users navigate the product.
       * Implemented a tiered trial system to regulate feature access for free users, incorporating role-based restrictions and organization-specific content visibility.
+      * Developed a Buyer Guides feature, complete with pricing tables and visual aids, to assist users in the negotiation and software purchasing process.
       * Designed key UI components, like dropdowns, modals, and a custom data visualization chart.
       * Led the enhancement of the user interface with subtle animations for a better experience.
       * Identified and removed large amounts of unused code, improving maintainability and performance.

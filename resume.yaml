@@ -17,9 +17,27 @@ intro: |
   effectively, while developing professionally and advancing their careers.
 
 work:
+  - employer: Vendr
+    start: 2023
+    end: 2024
+    position: Senior Software Engineer, Frontend
+    what: |
+      Remote. Working in the Activation team as frontend engineer building user interfaces and experiences with Elm, JS and CSS for improving the onboarding experience for new users.
+
+    details: |
+      * Authored technical plans for product goals defining API contracts and team tasks.
+      * Overhauled main navigation to be collapsible and mobile-friendly with smooth animations.
+      * Developed a user-friendly, step-by-step account setup and onboarding process.
+      * Built an onboarding guide with real-time alerts to help users navigate the product.
+      * Implemented a tiered trial system to regulate feature access for free users, incorporating role-based restrictions and organization-specific content visibility.
+      * Designed key UI components, like dropdowns, modals, and a custom data visualization chart.
+      * Led the enhancement of the user interface with subtle animations for a better experience.
+      * Identified and removed large amounts of unused code, improving maintainability and performance.
+
   - employer: Wikimedia Foundation
     positions:
       - start: 2021
+        end: 2023
         position: Staff Software Engineer, Tech lead
         what: |
           Remote. Working in the [Trust and Safety Tools][tstteam] team as the

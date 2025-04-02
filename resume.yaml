@@ -17,6 +17,29 @@ intro: |
   effectively, while developing professionally and advancing their careers.
 
 work:
+  - employer: Routine
+    start: 2024
+    position: Senior Software Engineer, Frontend
+    what: |
+      Remote. Working as an engineer in a small startup team, building a web and desktop client for a productivity and PKM tool with calendar, tasks and notes. Using Electron, Vue, Typescript, SASS, Prosemirror and OCaml.
+
+    details: |
+      * Added a new global search key bind and modal for navigation
+      * Built a new block-based rich text editor with custom types based on Prosemirror. Featuring:
+        * Draggable blocks
+        * Block mouse and keyboard selection
+        * Custom blocks like tasks, embeds, inline references, callouts, etc
+        * Undo/redo
+        * Document synchronization and content reconcilliation
+        * Custom keyboard shortcuts and actions
+      * Upgraded tooling from deprecated vue-cli to the Vue recommended vite
+        * Updated codebase to work with ESM
+        * Updated testing tooling
+        * Updated Electron app building process
+        * Updated SASS to modern versions
+        * Fixed Typescript not passing type checking by fixing hundreds of errors
+      * Lots of other small features, like a system theme option, and continuous bug fixes
+      * Maintenance, support for users and the community
   - employer: Vendr
     start: 2023
     end: 2024

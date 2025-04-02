@@ -38,7 +38,7 @@ a {
   border-bottom: 1px solid #cfebff;
 }
 
-body > header {
+body>header {
   background-color: var(--header-bg-border-fg);
   text-align: center;
   position: sticky;
@@ -48,12 +48,12 @@ body > header {
   margin-bottom: 3em;
 }
 
-body > header > * {
+body>header>* {
   margin: 0 10px;
 }
 
 @media print {
-  body > header {
+  body>header {
     display: none;
   }
 
@@ -69,6 +69,7 @@ body > header > * {
   }
 
   footer {
+    margin-top: 30px;
   }
 
   a {
@@ -83,21 +84,20 @@ body > header > * {
   display: flex;
 }
 
-.kv > * {
-}
+.kv>* {}
 
-.kv > * {
+.kv>* {
   padding: 4px 10px;
 }
 
-.kv > :first-child {
+.kv> :first-child {
   width: 100px;
   text-align: right;
   color: var(--kv-k-color);
   padding-right: 10px;
 }
 
-.kv > :last-child {
+.kv> :last-child {
   flex: 1;
   padding-left: 10px;
 }
@@ -114,7 +114,7 @@ body > header > * {
   }
 }
 
-#container > header {
+#container>header {
   width: 100%;
   display: flex;
   align-items: center;
@@ -122,10 +122,9 @@ body > header > * {
   margin: 0 0 3em 0;
 }
 
-#container > header > * {
-}
+#container>header>* {}
 
-#container > header img.photo {
+#container>header img.photo {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -133,7 +132,7 @@ body > header > * {
 }
 
 @media print {
-  #container > header img.photo {
+  #container>header img.photo {
     display: none;
   }
 }
@@ -142,17 +141,17 @@ section {
   margin-bottom: 40px;
 }
 
-section > header {
+section>header {
   border-bottom: 1px solid var(--header-bg-border-fg);
   padding: 10px 10px;
   margin-bottom: 10px;
 }
 
-section > header > * {
+section>header>* {
   margin: 0;
 }
 
-section > article {
+section>article {
   margin: 1rem 0 1.5rem;
 }
 
@@ -160,14 +159,14 @@ section .body {
   margin: 0 0.5rem;
 }
 
-section .body > h3 {
+section .body>h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid var(--header-bg-border-fg);
 }
 
-section .body > h3 > .date {
+section .body>h3>.date {
   font-weight: normal;
   font-style: italic;
   font-size: 75%;
@@ -189,22 +188,26 @@ details summary {
   margin-bottom: 10px;
   font-size: 1.25em;
 }
-.header-3el > * {
+
+.header-3el>* {
   padding: 10px 20px;
   border: 1px solid var(--header-bg-border-fg);
   border-width: 1px 1px 1px 0px;
 }
-.header-3el > :first-child {
+
+.header-3el> :first-child {
   background-color: var(--header-bg-border-fg);
   font-weight: bold;
   border-width: 1px;
   min-width: 100px;
 }
-.header-3el > :nth-child(2) {
+
+.header-3el> :nth-child(2) {
   font-weight: bold;
   flex: 1;
 }
-.header-3el > :last-child {
+
+.header-3el> :last-child {
   font-style: italic;
 }
 
@@ -216,49 +219,55 @@ details summary {
   display: flex;
   justify-content: space-evenly;
 }
+
 .tech .table {
   font-size: 0.8em;
 }
+
 .tech .table h4 {
   background-color: var(--header-bg-border-fg);
   margin: 1em 0 0.3em;
   padding: 0.3em;
 }
-.tech .table-headers > div {
+
+.tech .table-headers>div {
   width: calc(100% / 6);
   text-align: center;
 }
-.tech .table-headers > div > * {
+
+.tech .table-headers>div>* {
   display: block;
 }
-.tech .table-headers > div > span:first-child {
-}
-.tech .table-headers > div > span:last-child {
+
+.tech .table-headers>div>span:first-child {}
+
+.tech .table-headers>div>span:last-child {
   font-size: 0.5em;
 }
+
 .tech .tech-row {
   display: flex;
 }
+
 .tech .tech-row .name {
   width: calc(100% / 6);
   padding: 0.1em 0.5em;
 }
+
 .tech .tech-row .level {
   width: calc(100% * 5 / 6);
   display: flex;
   align-items: center;
 }
+
 .tech .tech-row .level-line {
   --0-width: 8px;
   margin-left: calc(100% / 5 / 2 - var(--0-width) / 2);
   width: calc(100% / 5 * (var(--level) - 1) + var(--0-width));
   height: 4px;
-  background: var(--header-bg-border-fg)
-    linear-gradient(
-      90deg,
+  background: var(--header-bg-border-fg) linear-gradient(90deg,
       hsl(calc(10 + var(--level) * 35), 50%, 96%),
-      hsl(calc(10 + var(--level) * 35), 70%, 70%)
-    );
+      hsl(calc(10 + var(--level) * 35), 70%, 70%));
   border-radius: 2px;
 }
 

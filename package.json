@@ -8,8 +8,8 @@
   "devDependencies": {
     "ejs": "^3.1.6",
     "js-yaml": "^4.0.0",
-    "marked": "^11.1.1",
-    "puppeteer": "^21.7.0"
+    "marked": "^15.0.7",
+    "puppeteer": "^24.5.0"
   },
   "scripts": {
     "build-html": "./bin/build-html.js",
